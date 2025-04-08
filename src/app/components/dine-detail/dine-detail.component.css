@@ -1,0 +1,135 @@
+/* Container styles */
+.dine-wrapper {
+  padding: 30px;
+  background-color: #fafafa;
+}
+
+/* Title styling */
+.dine-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Grid container for restaurant cards */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Restaurant card */
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.restaurant-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Details */
+.restaurant-details {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+/* Title */
+.restaurant-details h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 0;
+}
+
+/* Cuisine & Location */
+.subtext {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Rating */
+.rating {
+  font-size: 1rem;
+  color: #ffa500;
+  margin: 5px 0;
+}
+
+/* Button */
+.view-menu-btn {
+  margin-top: auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e88e5;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-menu-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dine-wrapper {
+    padding: 20px;
+  }
+
+  .dine-title {
+    font-size: 1.75rem;
+  }
+
+  .restaurant-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .subtext {
+    font-size: 0.85rem;
+  }
+
+  .view-menu-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dine-title {
+    font-size: 1.5rem;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-details h3 {
+    font-size: 1rem;
+  }
+
+  .view-menu-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}

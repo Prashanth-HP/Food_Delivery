@@ -1,0 +1,8 @@
+<div class="tracker">
+  <div
+    class="step"
+    *ngFor="let step of orderStatuses"
+    [class.active]="orderStatuses.indexOf(step) <= orderStatuses.indexOf(order.status)">
+    {{ step }}
+  </div>
+</div>

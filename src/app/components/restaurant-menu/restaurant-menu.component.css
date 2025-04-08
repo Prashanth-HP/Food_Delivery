@@ -1,0 +1,155 @@
+/* Container for entire menu */
+.menu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Restaurant name */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Filter & Search controls */
+.menu-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.menu-controls input,
+.menu-controls select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex: 1 1 48%;
+  min-width: 180px;
+}
+
+/* Food card grid */
+.menu-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* Individual food card */
+.food-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Food image */
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Food details */
+.food-card .content {
+  padding: 15px;
+}
+
+.food-card h4 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.food-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.food-card .price {
+  font-weight: bold;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart button */
+.food-card button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.food-card button:hover {
+  background-color: #1b4332;
+}
+
+/* 🔽 Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-controls input,
+  .menu-controls select {
+    width: 100%;
+  }
+
+  .food-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .food-card p {
+    font-size: 0.9rem;
+  }
+
+  .food-card button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .food-card img {
+    height: 150px;
+  }
+
+  .food-card .content {
+    padding: 12px;
+  }
+
+  .food-card h4 {
+    font-size: 1rem;
+  }
+
+  .food-card p {
+    font-size: 0.85rem;
+  }
+}
