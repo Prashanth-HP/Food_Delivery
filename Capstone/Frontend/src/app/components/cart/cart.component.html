@@ -1,0 +1,22 @@
+<div class="cart-container">
+  <h2 class="cart-title">Your Cart</h2>
+
+  <div *ngFor="let item of cartService.getCartItems()" class="cart-item">
+    <div class="item-info">
+      <div class="item-title">{{ item.name }}</div>
+      <div class="item-price">₹{{ item.price }}</div>
+    </div>
+
+    <div class="quantity-controls">
+      <button class="quantity-btn" (click)="decreaseQuantity(item)">−</button>
+      <div class="quantity-value">{{ item.quantity }}</div>
+      <button class="quantity-btn" (click)="increaseQuantity(item)">+</button>
+    </div>
+
+    <button class="remove-btn" (click)="removeItem(item)">Remove</button>
+  </div>
+
+  <div class="total-container">
+    Total: ₹{{ getTotalPrice() }}
+  </div>
+</div>

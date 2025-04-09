@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "name": "Indian Accent",
+    "cuisine": "Modern Indian",
+    "location": "New Delhi",
+    "rating": 4.9,
+    "imageUrl": "assets/Restaurant images/Indian Accent.jpg",
+    "menu": [
+      {
+        "id": "1.1",
+        "name": "Paneer Tikka",
+        "description": "Grilled paneer with spices.",
+        "isVeg":"Veg",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Paneer Tikka.jpg"
+      },
+      {
+        "id": "1.2",
+        "name": "Butter Chicken",
+        "description": "Classic butter chicken with a creamy gravy.",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Butter Chicken.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bukhara",
+    "cuisine": "North Indian",
+    "location": "New Delhi",
+    "rating": 4.8,
+    "imageUrl": "assets/Restaurant images/Bukhara.jpg",
+    "menu": [
+      {
+        "id": "2.1",
+        "name": "Tandoori Roti",
+        "description": "Freshly baked Indian flatbread.",
+        "price": "80",
+        "imageUrl": "assets/Menu Images/Tandoori Roti.jpg"
+      },
+      {
+        "id": "2.2",
+        "name": "Seekh Kebab",
+        "description": "Minced meat skewers grilled to perfection.",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Seekh Kebab.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Wasabi by Morimoto",
+    "cuisine": "Japanese",
+    "location": "Mumbai",
+    "rating": 4.7,
+    "imageUrl": "assets/Restaurant images/Wasabi by Morimoto.jpg",
+    "menu": [
+      {
+        "id": "3.1",
+        "name": "Sushi Platter",
+        "description": "Assorted sushi rolls with fresh fish.",
+        "price": "900",
+        "imageUrl": "assets/Menu Images/Sushi Platter.jpg"
+      },
+      {
+        "id": "3.2",
+        "name": "Tempura",
+        "description": "Crispy battered vegetables and prawns.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Tempura.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Karavalli",
+    "cuisine": "South Indian Coastal",
+    "location": "Bengaluru",
+    "rating": 4.6,
+    "imageUrl": "assets/Restaurant images/Karavalli.jpg",
+    "menu": [
+      {
+        "id": "4.1",
+        "name": "Fish Moilee",
+        "description": "Kerala-style fish curry with coconut milk.",
+        "price": "500",
+        "imageUrl": "assets/Menu Images/Fish Moilee.jpg"
+      },
+      {
+        "id": "4.2",
+        "name": "Malabar Parotta",
+        "description": "Soft and flaky flatbread from Kerala.",
+        "price": "120",
+        "imageUrl": "assets/Menu Images/Malabar Parotta.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "The Table",
+    "cuisine": "European",
+    "location": "Mumbai",
+    "rating": 4.5,
+    "imageUrl": "assets/Restaurant images/The Table.jpg",
+    "menu": [
+      {
+        "id": "5.1",
+        "name": "Grilled Salmon",
+        "description": "Perfectly grilled salmon with lemon butter sauce.",
+        "price": "950",
+        "imageUrl": "assets/Menu Images/Grilled Salmon.jpg"
+      },
+      {
+        "id": "5.2",
+        "name": "Caesar Salad",
+        "description": "Classic Caesar salad with croutons and parmesan.",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Caesar Salad.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Dum Pukht",
+    "cuisine": "Awadhi",
+    "location": "New Delhi",
+    "rating": 4.8,
+    "imageUrl": "assets/Restaurant images/Dum Pukht.jpg",
+    "menu": [
+      {
+        "id": "6.1",
+        "name": "Lucknowi Biryani",
+        "description": "Fragrant rice and meat cooked in a traditional dum style.",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Lucknowi Biryani.jpg"
+      },
+      {
+        "id": "6.2",
+        "name": "Galouti Kebab",
+        "description": "Melt-in-your-mouth minced meat kebabs.",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Galouti Kebab.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Villa Maya",
+    "cuisine": "Global Fusion",
+    "location": "Thiruvananthapuram",
+    "rating": 4.7,
+    "imageUrl": "assets/Restaurant images/Villa Maya.jpg",
+    "menu": [
+      {
+        "id": "7.1",
+        "name": "Truffle Fries",
+        "description": "Crispy fries topped with truffle oil and parmesan.",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Truffle Fries.jpg"
+      },
+      {
+        "id": "7.2",
+        "name": "Pasta Primavera",
+        "description": "Pasta with fresh vegetables and creamy sauce.",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Pasta Primavera.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Bombay Canteen",
+    "cuisine": "Indian Fusion",
+    "location": "Mumbai",
+    "rating": 4.6,
+    "imageUrl": "assets/Restaurant images/The Bombay Canteen.jpg",
+    "menu": [
+      {
+        "id": "8.1",
+        "name": "Vada Pav",
+        "description": "Classic Bombay street food with spicy chutney.",
+        "price": "150",
+        "imageUrl": "assets/Menu Images/Vada Pav.jpg"
+      },
+      {
+        "id": "8.2",
+        "name": "Bhel Puri",
+        "description": "Crispy puffed rice with tangy tamarind chutney.",
+        "price": "120",
+        "imageUrl": "assets/Menu Images/Bhel Puri.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "SodaBottleOpenerWala",
+    "cuisine": "Parsi, Bombay-Style",
+    "location": "Multiple Cities",
+    "rating": 4.5,
+    "imageUrl": "assets/Restaurant images/SodaBottleOpenerWala.jpg",
+    "menu": [
+      {
+        "id": "9.1",
+        "name": "Berry Pulav",
+        "description": "Rice with berries and spices, a Parsi delicacy.",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Berry Pulav.jpg"
+      },
+      {
+        "id": "9.2",
+        "name": "Patra",
+        "description": "Taro leaves stuffed with spices, rolled and steamed.",
+        "price": "200",
+        "imageUrl": "assets/Menu Images/Patra.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Peshawri",
+    "cuisine": "Northwest Frontier",
+    "location": "Mumbai",
+    "rating": 4.7,
+    "imageUrl": "assets/Restaurant images/peshawri.jpg",
+    "menu": [
+      {
+        "id": "10.1",
+        "name": "Murg Malai Kebab",
+        "description": "Tender chicken marinated in cream and spices.",
+        "price": "600",
+        "imageUrl": "assets/Menu Images/Murg Malai Kebab .jpg"
+      },
+      {
+        "id": "10.2",
+        "name": "Dal Bukhara",
+        "description": "Slow-cooked black lentils with butter.",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Dal Bukhara.jpg"
+      }
+    ]
+  }
+]

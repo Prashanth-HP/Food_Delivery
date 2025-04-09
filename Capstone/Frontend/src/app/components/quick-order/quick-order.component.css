@@ -1,0 +1,138 @@
+.quick-wrapper {
+  padding: 2rem;
+  background-color: #fffefc;
+}
+
+.quick-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Filters Section */
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+/* Grid for cards */
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* Card styling */
+.quick-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-card:hover {
+  transform: translateY(-5px);
+}
+
+.quick-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Card content */
+.quick-details {
+  padding: 1rem;
+  text-align: center;
+}
+
+.quick-details h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quick-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* Order button */
+.quick-order-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-order-btn:hover {
+  background-color: #e64a19;
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+  margin-top: 2rem;
+}
+
+/* 🔽 Responsive Enhancements */
+@media (max-width: 768px) {
+  .quick-title {
+    font-size: 1.6rem;
+  }
+
+  .quick-details h4 {
+    font-size: 1rem;
+  }
+
+  .quick-meta {
+    font-size: 0.85rem;
+  }
+
+  .quick-order-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .filter-controls select {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-wrapper {
+    padding: 1rem;
+  }
+
+  .quick-title {
+    font-size: 1.4rem;
+  }
+
+  .quick-order-btn {
+    width: 100%;
+  }
+}
