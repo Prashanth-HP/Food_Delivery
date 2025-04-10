@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Order } from '../models/order.model';
 import { Observable, of } from 'rxjs';
-
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class OrderMealService {
   private orders: Order[] = [];
-
-  placeOrder(order: Order): Observable<Order> {
+  private apiUrl="http://localhost:3000/api/orders";
+  constructor(private http:HttpClient){}
+  placeOrder(order: Order): Observable<any> {
     order.id = this.orders.length + 1; // Auto-generate ID
     this.orders.push(order);
-    return of(order);
+    return this.http.post(this.apiUrl,order);
   }
 
   getOrders(): Observable<Order[]> {

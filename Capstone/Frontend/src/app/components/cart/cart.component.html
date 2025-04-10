@@ -15,8 +15,13 @@
 
     <button class="remove-btn" (click)="removeItem(item)">Remove</button>
   </div>
-
+  
   <div class="total-container">
     Total: ₹{{ getTotalPrice() }}
+  </div>
+  <div class="total-container">
+    <button [routerLink]="['/']" (click)="onclick()" class="view-menu-btn">
+      Order
+    </button>
   </div>
 </div>

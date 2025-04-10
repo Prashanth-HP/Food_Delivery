@@ -3,7 +3,7 @@
     <li *ngFor="let restaurant of restaurants">
       <a [routerLink]="['/restaurant', restaurant.id]">
         <h3>{{ restaurant.name }}</h3>
-        <p>{{ restaurant.cuisine }} - {{ restaurant.location }}</p>
+        <p>{{ restaurant.cuisine_type }} - {{ restaurant.location }}</p>
         <p>Rating: {{ restaurant.rating }}</p>
       </a>
     </li>

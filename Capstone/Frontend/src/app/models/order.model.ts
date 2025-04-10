@@ -1,7 +1,10 @@
+import { FoodItem } from './food-item.model';
 export interface Order {
-  id: number;
-  restaurantId: number;
+  id?: number;
+  restaurant_id: number;
   items: string[];
-  totalAmount: number;
+  total_price: number;
+  delivery_address: string;
   status: 'Pending' | 'Preparing' | 'Out for Delivery' | 'Delivered';
+  created_at: Date;
 }

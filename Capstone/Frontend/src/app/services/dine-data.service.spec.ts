@@ -8,7 +8,7 @@ import { Restaurant } from 'src/app/models/restaurant.model';
   providedIn: 'root'
 })
 export class DineDataService {
-  private dataUrl = 'assets/restaurant.json';
+  private dataUrl = 'http://localhost:3000/api/restaurants';
 
   constructor(private http: HttpClient) {}
 

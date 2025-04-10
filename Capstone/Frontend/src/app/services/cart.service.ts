@@ -6,22 +6,31 @@ import { FoodItem } from '../models/food-item.model';
 })
 export class CartService {
   private items: FoodItem[] = [];
+  private restaurant_id: number=-1;
 
   // ✅ Add item to cart
   addToCart(item: any) {
+    if (this.items.length === 0) {
+      this.restaurant_id = item.restaurant_id;
+      console.log("resid"+this.restaurant_id)
+    }
     const existing = this.items.find(cartItem  => cartItem.id === item.id);
     if (existing) {
       existing.quantity += 1;
     } else {
       this.items.push({ ...item, quantity: 1 });
     }
+    console.log("Done adding");
+    
   }
 
   // ✅ Get all items
   getCartItems(): FoodItem[] {
     return this.items;
   }
-
+  getResId():number {
+    return this.restaurant_id;
+  }
   // ✅ Remove an item completely
   removeFromCart(item: FoodItem) {
     this.items = this.items.filter(i => i.id !== item.id);

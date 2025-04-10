@@ -12,12 +12,11 @@ export interface MenuItem {
 export interface Restaurant {
   id: number;
   name: string;
-  cuisine: string;
+  cuisine_type: string;
   location: string;
   rating: number;
   imageUrl: string;
   menu: MenuItem[];
-  startingPrice?: number;
 }
 
 export interface quickFoods {

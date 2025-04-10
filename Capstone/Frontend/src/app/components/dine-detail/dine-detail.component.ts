@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DineDataService } from 'src/app/services/dine-data.service';
 import { Restaurant } from 'src/app/models/restaurant.model';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-dine-detail',
   templateUrl: './dine-detail.component.html',
@@ -10,7 +10,7 @@ import { Restaurant } from 'src/app/models/restaurant.model';
 })
 export class DineDetailComponent implements OnInit {
   restaurants: Restaurant[] = [];
-
+  imgPath="../../../assets/Restaurant_images/Bukhara.jpg";
   constructor(private dineService: DineDataService) {}
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 <div *ngIf="restaurant; else loading">
   <h1>{{ restaurant.name }}</h1>
-  <p>{{ restaurant.cuisine }} - {{ restaurant.location }}</p>
+  <p>{{ restaurant.cuisine_type }} - {{ restaurant.location }}</p>
   <p>Rating: {{ restaurant.rating }}</p>
 
   <button (click)="toggleMenu()">

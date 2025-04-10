@@ -8,7 +8,7 @@ import { Restaurant } from 'src/app/models/restaurant.model';  // Adjust path to
   providedIn: 'root',
 })
 export class DineDataService {
-  private apiUrl = 'assets/restaurant.json';  // Path to the JSON file
+  private apiUrl = 'http://localhost:3000/api/restaurants ';  // Path to the JSON file
 
   constructor(private http: HttpClient) {}
 
