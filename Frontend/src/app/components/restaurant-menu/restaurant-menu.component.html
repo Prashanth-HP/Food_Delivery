@@ -1,0 +1,18 @@
+<div class="menu-container">
+  <h2>{{ restaurant?.name }}</h2>
+  <div class="menu-grid">
+    <div class="food-card" *ngFor="let item of menuItems">
+      <img [src]="item.imageUrl" alt="{{ item.name }}" />
+      <div class="content">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+        <div class="price">₹{{ item.price }} • {{ item.isVeg ? 'Veg' : 'Non-Veg' }}</div>
+        <button (click)="addToCart(item)">Add to Cart</button>
+        <button (click)="toggleFavorite(item)">
+          <span [innerHTML]="item.isFavorite ? '❤️' : '🤍'"></span>
+          {{ item.isFavorite ? '' : '' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

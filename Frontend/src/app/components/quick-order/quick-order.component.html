@@ -1,0 +1,37 @@
+<div class="quick-wrapper">
+  <h2 class="quick-title">⚡ Quick Order Menu</h2>
+
+  <!-- Filter & Sort Controls -->
+  <div class="filter-controls">
+    <select [(ngModel)]="selectedType">
+      <option value="">All</option>
+      <option value="Veg">Veg</option>
+      <option value="Non-Veg">Non-Veg</option>
+    </select>
+
+    <select [(ngModel)]="sortOrder">
+      <option value="">Sort by Time</option>
+      <option value="timeAsc">Shortest First</option>
+      <option value="timeDesc">Longest First</option>
+    </select>
+    <button class="reset-btn" (click)="resetFilters()">Reset Filters</button>
+  </div>
+
+  <!-- Quick Food Cards -->
+  <div *ngIf="filteredFoods.length > 0; else noResults" class="quick-grid">
+    <div class="quick-card" *ngFor="let item of filteredFoods">
+      <img [src]="item.imageUrl" alt="{{ item.name }}" class="quick-img" />
+      <div class="quick-details">
+        <h4>{{ item.name }}</h4>
+        <p class="quick-meta">{{ item.type }} • ⏱ {{ item.time }} mins</p>
+        <p class="quick-meta">💰 ₹{{ item.price }}</p>
+        <button (click)="orderNow(item)" class="quick-order-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Results Template -->
+  <ng-template #noResults>
+    <div class="no-results">No items found for the selected filter.</div>
+  </ng-template>
+</div>

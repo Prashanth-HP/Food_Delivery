@@ -1,0 +1,118 @@
+.home-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdfb;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(45deg, #ff6e40, #ff3d00);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background-color: white;
+  color: #ff3d00;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #ffe5d9;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fff5f0;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+/* Categories */
+.categories {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.category-tags span {
+  background-color: #ffe5d9;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: #fff7f0;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff3d00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

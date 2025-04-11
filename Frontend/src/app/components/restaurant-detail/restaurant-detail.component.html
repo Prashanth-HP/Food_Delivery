@@ -1,0 +1,23 @@
+<div *ngIf="restaurant; else loading">
+  <h1>{{ restaurant.name }}</h1>
+  <p>{{ restaurant.cuisine_type }} - {{ restaurant.location }}</p>
+  <p>Rating: {{ restaurant.rating }}</p>
+
+  <button (click)="toggleMenu()">
+    {{ showMenu ? 'Hide Menu' : 'View Menu' }}
+  </button>
+
+  <div *ngIf="showMenu">
+    <ul>
+      <li *ngFor="let item of restaurant.menu">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+        <p>Price: {{ item.price }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p></p>
+</ng-template>

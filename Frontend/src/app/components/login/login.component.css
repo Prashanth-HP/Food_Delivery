@@ -1,0 +1,65 @@
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff5722;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #ff5722;
+  outline: none;
+}
+
+.login-button {
+  padding: 12px 24px;
+  background: #ff5722;
+  color: #fff;
+  font: 16px sans-serif;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%;
+  margin: 20px auto 0;
+  display: block;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #e64a19;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 12px;
+}

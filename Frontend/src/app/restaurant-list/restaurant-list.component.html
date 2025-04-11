@@ -1,0 +1,15 @@
+<div *ngIf="restaurants.length > 0; else noRestaurants">
+  <ul>
+    <li *ngFor="let restaurant of restaurants">
+      <a [routerLink]="['/restaurant', restaurant.id]">
+        <h3>{{ restaurant.name }}</h3>
+        <p>{{ restaurant.cuisine_type }} - {{ restaurant.location }}</p>
+        <p>Rating: {{ restaurant.rating }}</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noRestaurants>
+  <p>No restaurants available at the moment.</p>
+</ng-template>

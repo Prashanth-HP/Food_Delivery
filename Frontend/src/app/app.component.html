@@ -1,0 +1,17 @@
+<nav class="nav-bar">
+  <div class="logo-section">
+    <img src="assets/logo.png" alt="App Logo" class="app-logo" />
+    <span class="app-title">Food Delivery</span>
+  </div>
+  <a routerLink="/" routerLinkActive="active-link">Home</a>
+  <a routerLink="/dine" routerLinkActive="active-link">Dine</a>
+  <a routerLink="/quick-order" routerLinkActive="active-link">Quick Order</a>
+  <a routerLink="/favorites" routerLinkActive="active-link">Favorite</a>
+  <a routerLink="/cart">🛒 Cart ({{ getCartCount() }})</a>
+  <a *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</a>
+  <a *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</a>
+</nav>
+
+<router-outlet></router-outlet>
+
+

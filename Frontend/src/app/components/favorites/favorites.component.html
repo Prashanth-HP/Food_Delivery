@@ -1,0 +1,17 @@
+<div class="favorites-wrapper">
+  <h2>❤️ Your Favorite Foods</h2>
+  <div *ngIf="favoriteItems.length > 0; else noFavs">
+    <div *ngFor="let item of favoriteItems" class="favorite-card">
+      <img [src]="item.imageUrl" alt="{{ item.name }}">
+      <div class="favorite-details">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+        <p>₹{{ item.price }} • {{ item.isVeg ? 'Veg' : 'Non-Veg' }}</p>
+        <button (click)="orderItem(item)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #noFavs>
+    <p>No favorites added yet!</p>
+  </ng-template>
+</div>
