@@ -1,0 +1,183 @@
+/* Main container styling */
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Header styling */
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Loading spinner */
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.25rem;
+}
+
+/* Alert boxes */
+.alert {
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.alert-info {
+  background-color: #e7f5ff;
+  border-color: #d0ebff;
+  color: #1864ab;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-dark {
+  background-color: #343a40 !important;
+}
+
+.table-dark th {
+  color: white;
+  font-weight: 500;
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.table th, .table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+
+/* Status badges */
+.status-pending {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-completed {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-cancelled {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Items list styling */
+td div {
+  padding: 0.25rem 0;
+}
+
+td div:not(:last-child) {
+  border-bottom: 1px dashed #e9ecef;
+}
+
+/* Currency formatting */
+td:nth-child(4) {
+  font-weight: 500;
+  color: #2b8a3e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Add to your existing CSS */
+.status-timer {
+  display: inline-block;
+  margin-left: 8px;
+  animation: pulse 1.5s infinite;
+  color: currentColor;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Update your status classes to include animations */
+.status-pending {
+  /* ... existing styles ... */
+  border-left: 3px solid #ed8936;
+}
+
+.status-preparing {
+  background: rgba(66, 153, 225, 0.12);
+  color: #4299e1;
+  border-left: 3px solid #4299e1;
+}
+
+.status-out-for-delivery {
+  background: rgba(159, 122, 234, 0.12);
+  color: #9f7aea;
+  border-left: 3px solid #9f7aea;
+}

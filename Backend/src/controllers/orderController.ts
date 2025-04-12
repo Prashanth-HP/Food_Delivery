@@ -60,26 +60,39 @@ export const createOrder = async (req: Request, res: Response): Promise<void> =>
   }
 };
 
-// Update an order's status
+// Update an order's status (for automatic progression)
 export const updateOrderStatus = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   const { status } = req.body;
 
-  if (!status) {
+  // Validate status against allowed values
+  const allowedStatuses = ['Pending', 'Preparing', 'Out for Delivery', 'Delivered'];
+  if (!status || !allowedStatuses.includes(status)) {
     res.status(400).json({ error: 'Invalid status' });
     return;
   }
 
   try {
-    const [result]: any = await pool.query('UPDATE orders SET status = ? WHERE id = ?', [status, id]);
-
-    if (result.affectedRows === 0) {
-      res.status(404).json({ error: 'Order not found or cannot be updated' });
+    // First check if order exists
+    const [checkRows]: any = await pool.query('SELECT id FROM orders WHERE id = ?', [id]);
+    
+    if (checkRows.length === 0) {
+      res.status(404).json({ error: 'Order not found' });
       return;
     }
 
-    res.json({ message: 'Order status updated successfully' });
+    // Then update the status
+    const [result]: any = await pool.query(
+      'UPDATE orders SET status = ? WHERE id = ?',
+      [status, id]
+    );
+
+    res.json({ 
+      message: 'Order status updated successfully',
+      newStatus: status
+    });
   } catch (error) {
+    console.error('Error updating order status:', error);
     res.status(500).json({ error: 'Failed to update order status' });
   }
 };
@@ -97,8 +110,7 @@ export const deleteOrder = async (req: Request, res: Response): Promise<void> =>
 
     if (result.affectedRows === 0) {
       res.status(404).json({
-        error:
-          'Order not found or cannot be deleted because it is already "Out for Delivery"',
+        error: 'Order not found or cannot be deleted because it is already "Out for Delivery"',
       });
       return;
     }

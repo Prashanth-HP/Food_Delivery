@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Order } from '../models/order.model';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { map,tap } from 'rxjs/operators'
 @Injectable({
   providedIn: 'root'
 })
@@ -18,8 +19,19 @@ export class OrderMealService {
   getOrders(): Observable<Order[]> {
     return of(this.orders);
   }
+  getOrderss(): Observable<Order[]> {
+        return this.http.get<Order[]>(this.apiUrl).pipe(
+          tap((data) => {
+            console.log('Fetched orders:', data);  // Add this line
+          })
+      );
+    }
 
   getOrderById(id: number): Observable<Order | undefined> {
     return of(this.orders.find(order => order.id === id));
+  }
+
+  updateOrderStatus(orderId: number, status: string): Observable<any> {
+    return this.http.patch(`${this.apiUrl}/${orderId}/status`, { status });
   }
 }

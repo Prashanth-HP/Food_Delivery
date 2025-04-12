@@ -24,8 +24,11 @@
     Total: ₹{{ getTotalPrice() }}
   </div>
   <div class="total-container">
-    <button [routerLink]="['/']" (click)="placeOrder()" class="view-menu-btn">
+    <button [routerLink]="['/orders']" (click)="onclick()" class="view-menu-btn">
       Order
     </button>
   </div>
+
 </div>
+
+<!-- <app-orders></app-orders> -->

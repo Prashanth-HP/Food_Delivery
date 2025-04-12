@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <h2>Order History</h2>
+    
+    <div *ngIf="isLoading" class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p>Loading orders...</p>
+    </div>
+  
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="!isLoading && !errorMessage">
+      <div *ngIf="orders.length === 0" class="alert alert-info">
+        No orders found.
+      </div>
+  
+      <table *ngIf="orders.length > 0" class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Items</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td>{{ order.id }}</td>
+            <td>{{ order.created_at | date:'medium' }}</td>
+            <td>
+              <div *ngFor="let item of order.items">
+                {{ item }} 
+              </div>
+            </td>
+            <td>{{ order.total_price | currency:'INR' }}</td>
+            <td>
+                <span [class]="getStatusClass(order.status)">
+                  {{ order.status }}
+                  <span *ngIf="order.status !== 'Delivered'" class="status-timer">
+                    ●
+                  </span>
+                </span>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -16,6 +16,7 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
 import { FilterFoodPipe } from './pipes/filter-food.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { OrdersComponent } from './components/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LoginComponent } from './components/login/login.component';
     FavoritesComponent,
     FilterFoodPipe,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
