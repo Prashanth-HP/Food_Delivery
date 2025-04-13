@@ -5,14 +5,22 @@
 <div class="cart-container">
   <h2 class="cart-title">Your Cart</h2>
 
+  <!-- Show message if cart is empty -->
+  <div *ngIf="items.length === 0" class="empty-cart-message">
+    Your cart is empty.
+  </div>
+
   <div *ngFor="let item of items" class="cart-item">
     <div class="item-info">
       <div class="item-title">{{ item.name }}</div>
       <div class="item-price">₹{{ item.price }}</div>
+      <!-- Show item total -->
+      <div class="item-total">Subtotal: ₹{{ item.price * item.quantity }}</div>
     </div>
 
     <div class="quantity-controls">
-      <button class="quantity-btn" (click)="decreaseQuantity(item)">−</button>
+      <!-- Disable decrease button if quantity is 1 -->
+      <button class="quantity-btn" (click)="decreaseQuantity(item)" [disabled]="item.quantity <= 1">−</button>
       <div class="quantity-value">{{ item.quantity }}</div>
       <button class="quantity-btn" (click)="increaseQuantity(item)">+</button>
     </div>
@@ -20,15 +28,20 @@
     <button class="remove-btn" (click)="removeItem(item)">Remove</button>
   </div>
 
-  <div class="total-container">
-    Total: ₹{{ getTotalPrice() }}
-  </div>
-  <div class="total-container">
-    <button [routerLink]="['/orders']" (click)="onclick()" class="view-menu-btn">
-      Order
-    </button>
-  </div>
+  <!-- Only show total and order button if cart is not empty -->
+  <ng-container *ngIf="items.length > 0">
+    <div class="total-container">
+      Total: ₹{{ getTotalPrice() }}
+    </div>
+    <div class="total-container">
+      <!-- REMOVED [routerLink]="['/orders']" -->
+      <!-- Added disabled state based on isOrdering flag and if cart is empty -->
+      <button (click)="onclick()" class="view-menu-btn" [disabled]="isOrdering || items.length === 0 || !order">
+         {{ isOrdering ? 'Placing Order...' : 'Place Order' }}
+      </button>
+    </div>
+  </ng-container>
 
 </div>
 
-<!-- <app-orders></app-orders> -->
+<!-- <app-orders></app-orders> --> <!-- Usually you don't embed routed components like this -->

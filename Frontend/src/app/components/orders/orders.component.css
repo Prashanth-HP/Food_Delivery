@@ -1,4 +1,6 @@
-/* Main container styling */
+/* --------------------------------------------------- */
+/* Main Container Styling                              */
+/* --------------------------------------------------- */
 .container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1200px;
@@ -7,7 +9,9 @@
   color: #333;
 }
 
-/* Header styling */
+/* --------------------------------------------------- */
+/* Header Styling                                      */
+/* --------------------------------------------------- */
 h2 {
   font-size: 1.8rem;
   color: #2c3e50;
@@ -17,7 +21,9 @@ h2 {
   border-bottom: 2px solid #f0f0f0;
 }
 
-/* Loading spinner */
+/* --------------------------------------------------- */
+/* Loading Spinner                                     */
+/* --------------------------------------------------- */
 .text-center {
   display: flex;
   flex-direction: column;
@@ -32,7 +38,9 @@ h2 {
   border-width: 0.25rem;
 }
 
-/* Alert boxes */
+/* --------------------------------------------------- */
+/* Alert Boxes                                         */
+/* --------------------------------------------------- */
 .alert {
   border-radius: 6px;
   padding: 1rem 1.5rem;
@@ -53,7 +61,9 @@ h2 {
   color: #1864ab;
 }
 
-/* Table styling */
+/* --------------------------------------------------- */
+/* Table Styling                                       */
+/* --------------------------------------------------- */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -82,75 +92,79 @@ h2 {
   background-color: rgba(0, 0, 0, 0.01);
 }
 
-.table th, .table td {
+.table th,
+.table td {
   padding: 1rem 1.25rem;
   border-bottom: 1px solid #e9ecef;
   vertical-align: top;
 }
 
-/* Status badges */
+/* --------------------------------------------------- */
+/* Status Badges                                       */
+/* --------------------------------------------------- */
+.status-pending,
+.status-completed,
+.status-cancelled,
+.status-preparing,
+.status-out-for-delivery {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect for All Statuses */
+.status-pending:hover,
+.status-completed:hover,
+.status-cancelled:hover,
+.status-preparing:hover,
+.status-out-for-delivery:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Pending Status */
 .status-pending {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  background-color: #fff3cd;
+  background: linear-gradient(135deg, #fff3cd, #ffe8a1);
   color: #856404;
+  border-left: 4px solid #ed8936;
 }
 
+/* Completed Status */
 .status-completed {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  background-color: #d4edda;
+  background: linear-gradient(135deg, #d4edda, #b7eac9);
   color: #155724;
+  border-left: 4px solid #28a745;
 }
 
+/* Cancelled Status */
 .status-cancelled {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  background-color: #f8d7da;
+  background: linear-gradient(135deg, #f8d7da, #ffc1c1);
   color: #721c24;
+  border-left: 4px solid #dc3545;
 }
 
-/* Items list styling */
-td div {
-  padding: 0.25rem 0;
+/* Preparing Status */
+.status-preparing {
+  background: linear-gradient(135deg, rgba(66, 153, 225, 0.12), rgba(66, 153, 225, 0.2));
+  color: #4299e1;
+  border-left: 4px solid #4299e1;
 }
 
-td div:not(:last-child) {
-  border-bottom: 1px dashed #e9ecef;
+/* Out for Delivery Status */
+.status-out-for-delivery {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.12), rgba(159, 122, 234, 0.2));
+  color: #9f7aea;
+  border-left: 4px solid #9f7aea;
 }
 
-/* Currency formatting */
-td:nth-child(4) {
-  font-weight: 500;
-  color: #2b8a3e;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-  
-  .table {
-    display: block;
-    overflow-x: auto;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Add to your existing CSS */
+/* Timer Animation */
 .status-timer {
   display: inline-block;
   margin-left: 8px;
@@ -164,20 +178,101 @@ td:nth-child(4) {
   100% { opacity: 1; }
 }
 
-/* Update your status classes to include animations */
-.status-pending {
-  /* ... existing styles ... */
-  border-left: 3px solid #ed8936;
+/* --------------------------------------------------- */
+/* Items List Styling                                  */
+/* --------------------------------------------------- */
+td div {
+  padding: 0.25rem 0;
 }
 
-.status-preparing {
-  background: rgba(66, 153, 225, 0.12);
-  color: #4299e1;
-  border-left: 3px solid #4299e1;
+td div:not(:last-child) {
+  border-bottom: 1px dashed #e9ecef;
 }
 
-.status-out-for-delivery {
-  background: rgba(159, 122, 234, 0.12);
-  color: #9f7aea;
-  border-left: 3px solid #9f7aea;
+/* --------------------------------------------------- */
+/* Currency Formatting                                 */
+/* --------------------------------------------------- */
+td:nth-child(4) {
+  font-weight: 500;
+  color: #2b8a3e;
+}
+
+/* --------------------------------------------------- */
+/* Responsive Adjustments                              */
+/* --------------------------------------------------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------- */
+/* Action Button Styling (e.g., Cancel Button)         */
+/* --------------------------------------------------- */
+.table td .btn { /* General styling for buttons in table cells */
+  padding: 0.35rem 0.9rem; /* Slightly adjusted padding */
+  font-size: 0.8rem;     /* Slightly smaller font */
+  border-radius: 15px;   /* Rounded like status badges */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;          /* Remove default bootstrap border */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  vertical-align: middle; /* Helps align button with text in the cell */
+}
+/* Specific styling for the Cancel (danger) button */
+.table td .btn-danger {
+  background: linear-gradient(135deg, #ff4d4d, #e53e3e); /* Rich red gradient */
+  color: white;
+  border: none; /* Remove default borders */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 0.5rem 1rem; /* Adjust padding for better proportions */
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 0.5px; /* Add spacing for readability */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.2s ease-in-out; /* Smooth transitions */
+}
+
+/* Hover effect for enabled buttons */
+.table td .btn:not(:disabled):hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Hover effect for the Cancel (danger) button */
+.table td .btn-danger:not(:disabled):hover {
+  background: linear-gradient(135deg, #e53e3e, #c53030); /* Darker red gradient */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle glowing border */
+}
+
+/* Active state for the Cancel button */
+.table td .btn-danger:active {
+  transform: translateY(0); /* Reset lift effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow for pressed state */
+  background: linear-gradient(135deg, #c53030, #a02c2c); /* Even darker gradient */
+}
+
+/* Disabled state for the Cancel button */
+.table td .btn-danger:disabled {
+  background: linear-gradient(135deg, #f08080, #f59d9d); /* Light muted red */
+  color: #a0a0a0; /* Muted text color */
+  cursor: not-allowed; /* Indicate it's disabled */
+  box-shadow: none; /* Remove shadow for disabled state */
+}
+/* Optional: Add a little space if multiple buttons were ever in the same cell */
+.table td .btn + .btn {
+    margin-left: 0.5rem;
 }

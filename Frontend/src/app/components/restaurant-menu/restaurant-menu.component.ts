@@ -7,6 +7,9 @@ import { FavoriteService } from 'src/app/services/favorite.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { ToastrService } from 'ngx-toastr'; 
+
+
 @Component({
   selector: 'app-restaurant-menu',
   templateUrl: './restaurant-menu.component.html',
@@ -23,10 +26,12 @@ export class RestaurantMenuComponent implements OnInit {
     private dineService: DineDataService,
     private cartService: CartService,
     private favoriteService: FavoriteService,
-    private http: HttpClient
+    private http: HttpClient,
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {
+
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.getRestaurantss().subscribe((restaurants) => {
       this.restaurant = restaurants.find((r) => r.id === id);
@@ -50,6 +55,11 @@ export class RestaurantMenuComponent implements OnInit {
     this.cartService.addToCart(item);
     const audio = new Audio('assets/bell.mp3');
   audio.play();
+  this.toastr.success(`${item.name} has been added to your cart!`, 'Item Added', {
+    timeOut: 2000, // Duration of the toast
+    closeButton: true, // Show close button
+    progressBar: true, // Show progress bar
+  });
   }
 
   toggleFavorite(item: MenuItem) {

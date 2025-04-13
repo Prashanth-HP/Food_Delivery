@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { quickFoods } from 'src/app/models/restaurant.model';
-
+import { ToastrService } from 'ngx-toastr'; 
 
 @Component({
   selector: 'app-quick-order',
@@ -19,7 +19,9 @@ export class QuickOrderComponent {
   selectedType = '';
   sortOrder = '';
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService,private toastr: ToastrService) {
+    
+  }
 
   get filteredFoods() {
     let items = [...this.quickFoods];
@@ -41,6 +43,11 @@ export class QuickOrderComponent {
     this.cartService.addToCart(item);
     const audio = new Audio('assets/bell.mp3');
   audio.play();
+  this.toastr.success(`${item.name} has been added to your cart!`, 'Item Added', {
+    timeOut: 2000, // Duration of the toast
+    closeButton: true, // Show close button
+    progressBar: true, // Show progress bar
+  });
     // Optionally, use a toast or snackbar for better UX
   }
   resetFilters() {

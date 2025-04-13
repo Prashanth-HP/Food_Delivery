@@ -32,6 +32,11 @@ export class OrderMealService {
   }
 
   updateOrderStatus(orderId: number, status: string): Observable<any> {
-    return this.http.patch(`${this.apiUrl}/${orderId}/status`, { status });
+    return this.http.put(`${this.apiUrl}/${orderId}`, { status });
+  }
+
+  cancelOrder(orderId: number): Observable<any> {
+    // Uses the existing DELETE endpoint which has the necessary status checks
+    return this.http.delete(`${this.apiUrl}/${orderId}`);
   }
 }

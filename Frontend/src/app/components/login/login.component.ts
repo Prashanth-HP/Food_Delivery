@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service'; // ✅ Correct path to AuthService
-
+import { ToastrService } from 'ngx-toastr'; 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,13 +12,18 @@ export class LoginComponent {
   password = '';
   errorMessage = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router,   private toastr: ToastrService) {}
 
   loginUser() {
     this.authService.login(this.email, this.password).subscribe(
       (res: any) => {
         if (res.success) {
           this.router.navigate(['/']);
+          this.toastr.success(`Enjoy your time ordering!`, 'Login Successful!', {
+            timeOut: 2000, // Duration of the toast
+            closeButton: true, // Show close button
+            progressBar: true, // Show progress bar
+          });
         } else {
           this.errorMessage = res.message;
         }

@@ -1,10 +1,10 @@
 /* Base Styles */
 .nav-bar {
   display: flex;
-  justify-content: center;
+  justify-content:space-between; /* Positions logo, center links group, auth group */
   align-items: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
+  gap: 2rem; /* Increased gap between the 3 main sections */
+  padding: 0.8rem 2rem;
   background: linear-gradient(to right, #ff6e40, #ff3d00);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -13,51 +13,13 @@
   flex-wrap: wrap;
 }
 
-/* Nav Links */
-.nav-bar a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-/* Active & Hover Styles */
-.nav-bar a.active-link{
-  .nav-bar a.active-link {
-    background-color: transparent;
-    transform: none;
-  }
-}
-.nav-bar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-}
-
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.8rem;
-  }
-
-  .nav-bar a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
-}
+/* Logo Section */
 .logo-section {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: auto;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .app-logo {
@@ -66,13 +28,240 @@
   border-radius: 8px;
 }
 
-.app-name {
-  font-size: 1.4rem;
+.app-title {
   font-weight: bold;
+  font-size: 1.6rem;
   color: white;
+  white-space: nowrap;
 }
-.app-title{
-  font-weight: bold;
-  font-size: 2rem;
+
+/* === Wrapper for Central Nav Links === */
+.nav-links-center {
+  display: flex; /* Arrange links horizontally */
+  align-items: center; /* Align them vertically */
+  gap: 2.5rem; /* Spacing BETWEEN the central links (adjust as needed) */
+  flex-grow: 0; /* Don't let this section grow excessively by default */
+  flex-shrink: 0; /* Prevent shrinking too much */
+}
+
+/* General Nav Links Styling (applies inside wrapper too) */
+.nav-bar a {
+  text-decoration: none;
   color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  
+  padding: 0.5rem 0; /* Adjusted padding slightly, more gap now */
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+/* Add back underline/hover effects if padding changes affect them */
+.nav-bar a:hover {
+  /* Optional: Add a subtle background or just rely on transform */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  transform: scale(1.05);
+}
+.nav-bar a.active-link {
+   /* Example: Add a subtle underline or bolder weight for active */
+   /* text-decoration: underline; */
+   /* text-decoration-thickness: 2px; */
+   /* font-weight: 700; */
+   transform: none; /* Override hover transform if active */
+}
+
+
+/* User Auth Section */
+.user-auth-section {
+  display: flex;
+  align-items: center;
+  /* margin-left: auto; */ /* REMOVED - space-between on parent handles positioning */
+  gap: 1rem;
+}
+
+/* User Icon and Dropdown Container */
+.user-menu-container {
+  position: relative;
+}
+
+.user-icon-button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0 5px;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.user-icon-button:hover {
+    color: #eee;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 120px;
+  z-index: 1001;
+  padding: 5px 0;
+  margin-top: 8px;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: #333 !important;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  height: auto;
+  opacity: 1;
+  text-indent: 0;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #000 !important;
+  transform: none !important;
+}
+
+.dropdown-item:focus {
+    outline: 2px solid #007bff;
+    outline-offset: -2px;
+    background-color: #e0e0e0;
+}
+
+/* Login Link */
+.login-link {
+  /* Inherits .nav-bar a styles */
+}
+
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 992px) { /* Adjusted breakpoint slightly, test this */
+  .nav-bar {
+    gap: 1.5rem; /* Reduce gap slightly on medium screens */
+  }
+  .nav-links-center {
+    gap: 1.5rem; /* Reduce gap between central links */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Make items full width */
+    gap: 0; /* Reset gap, manage spacing with padding/margin */
+    padding: 0; /* Remove navbar padding */
+  }
+
+  .logo-section {
+     padding: 0.8rem 1rem; /* Add padding */
+     margin-bottom: 0; /* Reset */
+     border-bottom: 1px solid rgba(255,255,255,0.2); /* Optional separator */
+  }
+
+  .nav-links-center {
+     flex-direction: column; /* Stack central links */
+     align-items: stretch; /* Make links full width */
+     
+     gap: 0; /* Reset gap */
+     width: 100%; /* Ensure full width */
+  }
+
+  /* Adjust all link styles for stacked layout */
+  .nav-bar a,
+  .login-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 1rem; /* Consistent padding */
+    margin-left: 0;
+    border-radius: 0; /* Remove border-radius for stacked items */
+    box-sizing: border-box; /* Include padding in width */
+    border-bottom: 1px solid rgba(255,255,255,0.2); /* Optional separator */
+  }
+   .nav-bar a:last-child{
+      border-bottom: none; /* Remove border from last item in a group */
+   }
+
+  .nav-links-center a:hover, /* Apply hover to links inside center wrapper */
+  .login-link:hover {
+     background-color: rgba(255, 255, 255, 0.2); /* Keep hover */
+     transform: none; /* Disable scaling */
+  }
+
+  .user-auth-section {
+     width: 100%;
+     padding: 0; /* Remove padding, rely on link padding */
+     box-sizing: border-box;
+     /* The login link or user menu container will be handled by the general 'a' or specific rules below */
+     flex-direction: column;
+     align-items: stretch;
+     border-bottom: none; /* Remove bottom border if it's the last section */
+  }
+
+   .user-menu-container {
+     /* Ensure user menu container behaves like other links */
+     width: 100%;
+     display: flex; /* Use flex to align icon button */
+     justify-content: space-between; /* Push icon right */
+     align-items: center;
+     padding: 0.8rem 1rem; /* Add padding */
+     box-sizing: border-box;
+     border-bottom: 1px solid rgba(255,255,255,0.2); /* Optional separator */
+     position: static; /* Reset position for mobile if needed */
+   }
+   .user-icon-button {
+      padding: 0; /* Reset padding */
+   }
+
+   /* Adjust dropdown for mobile */
+   .dropdown-menu {
+     position: static; /* Change from absolute */
+     width: 100%;
+     border: none;
+     box-shadow: none;
+     border-radius: 0;
+     margin-top: 0;
+     background-color: rgba(0,0,0,0.1); /* Darker background */
+     padding: 0;
+   }
+   .dropdown-item {
+     padding: 0.8rem 1.5rem; /* Indent dropdown items slightly */
+     color: white !important; /* Light text on dark background */
+     border-bottom: 1px solid rgba(255,255,255,0.2);
+   }
+    .dropdown-item:last-child{
+       border-bottom: none;
+    }
+   .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white !important;
+   }
+
+}
+/* --- End Responsive Tweaks --- */
+
+
+/* Main Content Area */
+main {
+  padding: 20px;
 }

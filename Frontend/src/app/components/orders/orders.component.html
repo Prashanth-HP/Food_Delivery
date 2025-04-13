@@ -25,6 +25,7 @@
             <th>Items</th>
             <th>Total Amount</th>
             <th>Status</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -45,6 +46,17 @@
                   </span>
                 </span>
               </td>
+              <td>
+                <!-- Cancel Button - Conditionally Disabled -->
+                <button
+                  class="btn btn-danger btn-sm"
+                  (click)="cancelOrder(order)"
+                  [disabled]="order.status === 'Out for Delivery' || order.status === 'Delivered'"
+                  title="{{ (order.status === 'Out for Delivery' || order.status === 'Delivered') ? 'Cannot cancel order at this stage' : 'Cancel this order' }}">
+                  Cancel
+                </button>
+              </td>
+  
           </tr>
         </tbody>
       </table>

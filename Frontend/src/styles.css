@@ -46,3 +46,89 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Base styles for all toastr notifications */
+.toast {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  opacity: 0.98; /* Slightly transparent */
+  transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Success toast */
+.toast-success {
+  background: linear-gradient(135deg, #d4edda, #b7eac9); /* Light green gradient */
+  color: #155724; /* Dark green text */
+  border-left: 4px solid #28a745; /* Green left border */
+}
+
+/* Hover effect for success toast */
+.toast-success:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Info toast */
+.toast-info {
+  background: linear-gradient(135deg, #e7f5ff, #cce7ff); /* Light blue gradient */
+  color: #1864ab; /* Dark blue text */
+  border-left: 4px solid #4299e1; /* Blue left border */
+}
+
+/* Error toast */
+.toast-error {
+  background: linear-gradient(135deg, #f8d7da, #ffc1c1); /* Light red gradient */
+  color: #721c24; /* Dark red text */
+  border-left: 4px solid #dc3545; /* Red left border */
+}
+
+/* Warning toast */
+.toast-warning {
+  background: linear-gradient(135deg, #fff3cd, #ffe8a1); /* Light yellow gradient */
+  color: #856404; /* Dark yellow text */
+  border-left: 4px solid #ffc107; /* Yellow left border */
+}
+
+/* Positioning */
+.toast-top-right {
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.toast-bottom-right {
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.toast {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.toast.ng-animating.ng-hide-add {
+  animation: fadeOut 0.3s ease-in-out;
+}

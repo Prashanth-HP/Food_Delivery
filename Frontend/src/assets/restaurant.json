@@ -9,20 +9,89 @@
     "menu": [
       {
         "id": "1.1",
-        "restaurant_id":1,
+        "restaurant_id": 1,
         "name": "Paneer Tikka",
         "description": "Grilled paneer with spices.",
-        "isVeg":"Veg",
+        "isVeg": "Veg",
         "price": "350",
         "imageUrl": "assets/Menu Images/Paneer Tikka.jpg"
       },
       {
         "id": "1.2",
-        "restaurant_id":1,
+        "restaurant_id": 1,
         "name": "Butter Chicken",
         "description": "Classic butter chicken with a creamy gravy.",
         "price": "550",
         "imageUrl": "assets/Menu Images/Butter Chicken.jpg"
+      },
+      {
+        "id": "1.3",
+        "restaurant_id": 1,
+        "name": "Dal Makhani",
+        "description": "Creamy black lentils slow-cooked overnight.",
+        "isVeg": "Veg",
+        "price": "400",
+        "imageUrl": "assets/Menu Images/Dal Makhani.jpg"
+      },
+      {
+        "id": "1.4",
+        "restaurant_id": 1,
+        "name": "Lamb Chops",
+        "description": "Tender lamb chops marinated and grilled.",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Lamb Chops.jpg"
+      },
+      {
+        "id": "1.5",
+        "restaurant_id": 1,
+        "name": "Golgappa Chaat",
+        "description": "Modern twist on classic street food.",
+        "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Golgappa Chaat.jpg"
+      },
+      {
+        "id": "1.6",
+        "restaurant_id": 1,
+        "name": "Chicken Tikka Masala",
+        "description": "Grilled chicken in a spiced curry sauce.",
+        "price": "580",
+        "imageUrl": "assets/Menu Images/Chicken Tikka Masala.jpg"
+      },
+      {
+        "id": "1.7",
+        "restaurant_id": 1,
+        "name": "Garlic Naan",
+        "description": "Soft flatbread with garlic.",
+        "isVeg": "Veg",
+        "price": "120",
+        "imageUrl": "assets/Menu Images/Garlic Naan.jpeg"
+      },
+      {
+        "id": "1.8",
+        "restaurant_id": 1,
+        "name": "Vegetable Biryani",
+        "description": "Aromatic rice dish with mixed vegetables.",
+        "isVeg": "Veg",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Vegetable Biryani.jpg"
+      },
+      {
+        "id": "1.9",
+        "restaurant_id": 1,
+        "name": "Kashmiri Rogan Josh",
+        "description": "Rich lamb curry with traditional Kashmiri spices.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Kashmiri Rogan Josh.jpeg"
+      },
+      {
+        "id": "1.10",
+        "restaurant_id": 1,
+        "name": "Phirni",
+        "description": "Creamy rice pudding flavored with cardamom.",
+        "isVeg": "Veg",
+        "price": "250",
+        "imageUrl": "assets/Menu Images/Phirni.jpeg"
       }
     ]
   },
@@ -36,19 +105,88 @@
     "menu": [
       {
         "id": "2.1",
-        "restaurant_id":2,
+        "restaurant_id": 2,
         "name": "Tandoori Roti",
         "description": "Freshly baked Indian flatbread.",
+         "isVeg": "Veg",
         "price": "80",
         "imageUrl": "assets/Menu Images/Tandoori Roti.jpg"
       },
       {
         "id": "2.2",
-        "restaurant_id":2,
+        "restaurant_id": 2,
         "name": "Seekh Kebab",
         "description": "Minced meat skewers grilled to perfection.",
-        "price": "350",
+        "price": "450",
         "imageUrl": "assets/Menu Images/Seekh Kebab.jpg"
+      },
+      {
+        "id": "2.3",
+        "restaurant_id": 2,
+        "name": "Dal Bukhara",
+        "description": "Signature slow-cooked black lentils.",
+        "isVeg": "Veg",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Dal Bukhara.jpg"
+      },
+      {
+        "id": "2.4",
+        "restaurant_id": 2,
+        "name": "Murgh Malai Kebab",
+        "description": "Creamy chicken kebabs marinated in cheese and spices.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Murgh Malai Kebab.jpg"
+      },
+      {
+        "id": "2.5",
+        "restaurant_id": 2,
+        "name": "Paneer Tikka",
+        "description": "Cottage cheese cubes marinated and grilled in tandoor.",
+        "isVeg": "Veg",
+        "price": "500",
+        "imageUrl": "assets/Menu Images/Paneer Tikka Bukhara.jpg"
+      },
+      {
+        "id": "2.6",
+        "restaurant_id": 2,
+        "name": "Tandoori Jhinga",
+        "description": "Large prawns marinated and cooked in the tandoor.",
+        "price": "1200",
+        "imageUrl": "assets/Menu Images/Tandoori Jhinga.jpg"
+      },
+      {
+        "id": "2.7",
+        "restaurant_id": 2,
+        "name": "Sikandari Raan",
+        "description": "Whole leg of lamb marinated and slow-cooked.",
+        "price": "2500",
+        "imageUrl": "assets/Menu Images/Sikandari Raan.jpg"
+      },
+      {
+        "id": "2.8",
+        "restaurant_id": 2,
+        "name": "Naan",
+        "description": "Leavened flatbread baked in tandoor.",
+        "isVeg": "Veg",
+        "price": "100",
+        "imageUrl": "assets/Menu Images/Naan.jpg"
+      },
+      {
+        "id": "2.9",
+        "restaurant_id": 2,
+        "name": "Reshmi Kebab",
+        "description": "Silken chicken kebabs with mild spices.",
+        "price": "600",
+        "imageUrl": "assets/Menu Images/Reshmi Kebab.jpg"
+      },
+      {
+        "id": "2.10",
+        "restaurant_id": 2,
+        "name": "Kulfi Falooda",
+        "description": "Traditional Indian ice cream with vermicelli.",
+        "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Kulfi Falooda.jpg"
       }
     ]
   },
@@ -62,19 +200,87 @@
     "menu": [
       {
         "id": "3.1",
-        "restaurant_id":3,
+        "restaurant_id": 3,
         "name": "Sushi Platter",
         "description": "Assorted sushi rolls with fresh fish.",
-        "price": "900",
+        "price": "1900",
         "imageUrl": "assets/Menu Images/Sushi Platter.jpg"
       },
       {
         "id": "3.2",
-        "restaurant_id":3,
+        "restaurant_id": 3,
         "name": "Tempura",
         "description": "Crispy battered vegetables and prawns.",
-        "price": "650",
+        "price": "1650",
         "imageUrl": "assets/Menu Images/Tempura.jpg"
+      },
+      {
+        "id": "3.3",
+        "restaurant_id": 3,
+        "name": "Sashimi Moriawase",
+        "description": "Assortment of fresh raw fish slices.",
+        "price": "2200",
+        "imageUrl": "assets/Menu Images/Sashimi Moriawase.jpg"
+      },
+      {
+        "id": "3.4",
+        "restaurant_id": 3,
+        "name": "Miso Soup",
+        "description": "Traditional Japanese soup with tofu and seaweed.",
+        "isVeg": "Veg",
+        "price": "500",
+        "imageUrl": "assets/Menu Images/Miso Soup.jpg"
+      },
+      {
+        "id": "3.5",
+        "restaurant_id": 3,
+        "name": "Edamame",
+        "description": "Steamed soybeans lightly salted.",
+        "isVeg": "Veg",
+        "price": "600",
+        "imageUrl": "assets/Menu Images/Edamame.jpg"
+      },
+      {
+        "id": "3.6",
+        "restaurant_id": 3,
+        "name": "Black Cod Miso",
+        "description": "Signature grilled black cod marinated in miso.",
+        "price": "2800",
+        "imageUrl": "assets/Menu Images/Black Cod Miso.jpg"
+      },
+      {
+        "id": "3.7",
+        "restaurant_id": 3,
+        "name": "Wagyu Steak",
+        "description": "Premium Japanese Wagyu beef grilled to perfection.",
+        "price": "4500",
+        "imageUrl": "assets/Menu Images/Wagyu Steak.jpg"
+      },
+      {
+        "id": "3.8",
+        "restaurant_id": 3,
+        "name": "Vegetable Gyoza",
+        "description": "Pan-fried Japanese dumplings filled with vegetables.",
+        "isVeg": "Veg",
+        "price": "800",
+        "imageUrl": "assets/Menu Images/Vegetable Gyoza.jpg"
+      },
+      {
+        "id": "3.9",
+        "restaurant_id": 3,
+        "name": "Spicy Tuna Roll",
+        "description": "Sushi roll with spicy tuna and cucumber.",
+        "price": "1700",
+        "imageUrl": "assets/Menu Images/Spicy Tuna Roll.jpg"
+      },
+      {
+        "id": "3.10",
+        "restaurant_id": 3,
+        "name": "Matcha Ice Cream",
+        "description": "Green tea flavored ice cream.",
+        "isVeg": "Veg",
+        "price": "700",
+        "imageUrl": "assets/Menu Images/Matcha Ice Cream.jpg"
       }
     ]
   },
@@ -88,19 +294,87 @@
     "menu": [
       {
         "id": "4.1",
-        "restaurant_id":4,
+        "restaurant_id": 4,
         "name": "Fish Moilee",
         "description": "Kerala-style fish curry with coconut milk.",
-        "price": "500",
+        "price": "700",
         "imageUrl": "assets/Menu Images/Fish Moilee.jpg"
       },
       {
         "id": "4.2",
-        "restaurant_id":4,
+        "restaurant_id": 4,
         "name": "Malabar Parotta",
         "description": "Soft and flaky flatbread from Kerala.",
-        "price": "120",
+        "isVeg": "Veg",
+        "price": "150",
         "imageUrl": "assets/Menu Images/Malabar Parotta.jpg"
+      },
+      {
+        "id": "4.3",
+        "restaurant_id": 4,
+        "name": "Appam with Stew",
+        "description": "Lacy rice pancakes served with vegetable or chicken stew.",
+        "isVeg": "Veg",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Appam with Stew.jpg"
+      },
+      {
+        "id": "4.4",
+        "restaurant_id": 4,
+        "name": "Prawn Ghee Roast",
+        "description": "Mangalorean specialty prawns roasted in ghee and spices.",
+        "price": "850",
+        "imageUrl": "assets/Menu Images/Prawn Ghee Roast.jpg"
+      },
+      {
+        "id": "4.5",
+        "restaurant_id": 4,
+        "name": "Chicken Chettinad",
+        "description": "Spicy chicken curry from the Chettinad region.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Chicken Chettinad.jpg"
+      },
+      {
+        "id": "4.6",
+        "restaurant_id": 4,
+        "name": "Meen Pollichathu",
+        "description": "Fish marinated in spices, wrapped in banana leaf and grilled.",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Meen Pollichathu.jpg"
+      },
+      {
+        "id": "4.7",
+        "restaurant_id": 4,
+        "name": "Neer Dosa",
+        "description": "Thin and soft rice crepes.",
+        "isVeg": "Veg",
+        "price": "180",
+        "imageUrl": "assets/Menu Images/Neer Dosa.jpg"
+      },
+      {
+        "id": "4.8",
+        "restaurant_id": 4,
+        "name": "Mutton Sukka",
+        "description": "Dry mutton preparation with coastal spices.",
+        "price": "700",
+        "imageUrl": "assets/Menu Images/Mutton Sukka.jpg"
+      },
+      {
+        "id": "4.9",
+        "restaurant_id": 4,
+        "name": "Alleppey Fish Curry",
+        "description": "Tangy fish curry with raw mangoes and coconut milk.",
+        "price": "720",
+        "imageUrl": "assets/Menu Images/Alleppey Fish Curry.jpg"
+      },
+      {
+        "id": "4.10",
+        "restaurant_id": 4,
+        "name": "Ada Pradhaman",
+        "description": "Kerala style rice flakes pudding with jaggery and coconut milk.",
+        "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Ada Pradhaman.jpg"
       }
     ]
   },
@@ -114,19 +388,89 @@
     "menu": [
       {
         "id": "5.1",
-        "restaurant_id":5,
+        "restaurant_id": 5,
         "name": "Grilled Salmon",
         "description": "Perfectly grilled salmon with lemon butter sauce.",
-        "price": "950",
+        "price": "1250",
         "imageUrl": "assets/Menu Images/Grilled Salmon.jpg"
       },
       {
         "id": "5.2",
-        "restaurant_id":5,
+        "restaurant_id": 5,
         "name": "Caesar Salad",
         "description": "Classic Caesar salad with croutons and parmesan.",
-        "price": "350",
+        "isVeg": "Veg",
+        "price": "550",
         "imageUrl": "assets/Menu Images/Caesar Salad.jpg"
+      },
+      {
+        "id": "5.3",
+        "restaurant_id": 5,
+        "name": "Burrata Salad",
+        "description": "Creamy burrata cheese with tomatoes and basil.",
+        "isVeg": "Veg",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Burrata Salad.jpg"
+      },
+      {
+        "id": "5.4",
+        "restaurant_id": 5,
+        "name": "Truffle Tagliatelle",
+        "description": "Fresh pasta with truffle cream sauce.",
+        "isVeg": "Veg",
+        "price": "950",
+        "imageUrl": "assets/Menu Images/Truffle Tagliatelle.jpg"
+      },
+      {
+        "id": "5.5",
+        "restaurant_id": 5,
+        "name": "Ribeye Steak",
+        "description": "Grilled ribeye steak served with choice of sauce.",
+        "price": "1800",
+        "imageUrl": "assets/Menu Images/Ribeye Steak.jpg"
+      },
+      {
+        "id": "5.6",
+        "restaurant_id": 5,
+        "name": "Pan Seared Scallops",
+        "description": "Delicate scallops seared and served with puree.",
+        "price": "1100",
+        "imageUrl": "assets/Menu Images/Pan Seared Scallops.jpg"
+      },
+      {
+        "id": "5.7",
+        "restaurant_id": 5,
+        "name": "Mushroom Risotto",
+        "description": "Creamy risotto with wild mushrooms.",
+        "isVeg": "Veg",
+        "price": "850",
+        "imageUrl": "assets/Menu Images/Mushroom Risotto.jpg"
+      },
+      {
+        "id": "5.8",
+        "restaurant_id": 5,
+        "name": "Chicken Roulade",
+        "description": "Stuffed chicken breast rolled and cooked.",
+        "price": "1050",
+        "imageUrl": "assets/Menu Images/Chicken Roulade.jpg"
+      },
+      {
+        "id": "5.9",
+        "restaurant_id": 5,
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with tomato, mozzarella, and basil.",
+        "isVeg": "Veg",
+        "price": "700",
+        "imageUrl": "assets/Menu Images/Margherita Pizza.jpg"
+      },
+      {
+        "id": "5.10",
+        "restaurant_id": 5,
+        "name": "Tiramisu",
+        "description": "Classic Italian coffee-flavored dessert.",
+        "isVeg": "Veg",
+        "price": "500",
+        "imageUrl": "assets/Menu Images/Tiramisu.jpg"
       }
     ]
   },
@@ -140,19 +484,88 @@
     "menu": [
       {
         "id": "6.1",
-        "restaurant_id":6,
+        "restaurant_id": 6,
         "name": "Lucknowi Biryani",
         "description": "Fragrant rice and meat cooked in a traditional dum style.",
-        "price": "750",
+        "price": "950",
         "imageUrl": "assets/Menu Images/Lucknowi Biryani.jpg"
       },
       {
         "id": "6.2",
-        "restaurant_id":6,
+        "restaurant_id": 6,
         "name": "Galouti Kebab",
         "description": "Melt-in-your-mouth minced meat kebabs.",
-        "price": "450",
+        "price": "750",
         "imageUrl": "assets/Menu Images/Galouti Kebab.jpg"
+      },
+      {
+        "id": "6.3",
+        "restaurant_id": 6,
+        "name": "Kakori Kebab",
+        "description": "Soft minced lamb kebabs, an Awadhi specialty.",
+        "price": "800",
+        "imageUrl": "assets/Menu Images/Kakori Kebab.jpg"
+      },
+      {
+        "id": "6.4",
+        "restaurant_id": 6,
+        "name": "Dum Pukht Biryani",
+        "description": "Signature slow-cooked lamb biryani.",
+        "price": "1100",
+        "imageUrl": "assets/Menu Images/Dum Pukht Biryani.jpg"
+      },
+      {
+        "id": "6.5",
+        "restaurant_id": 6,
+        "name": "Murgh Handi Korma",
+        "description": "Rich chicken korma cooked in a sealed pot.",
+        "price": "900",
+        "imageUrl": "assets/Menu Images/Murgh Handi Korma.jpg"
+      },
+      {
+        "id": "6.6",
+        "restaurant_id": 6,
+        "name": "Shahi Tukda",
+        "description": "Rich bread pudding dessert with nuts and saffron.",
+        "isVeg": "Veg",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Shahi Tukda.jpg"
+      },
+      {
+        "id": "6.7",
+        "restaurant_id": 6,
+        "name": "Warqi Paratha",
+        "description": "Flaky layered flatbread.",
+        "isVeg": "Veg",
+        "price": "180",
+        "imageUrl": "assets/Menu Images/Warqi Paratha.jpg"
+      },
+      {
+        "id": "6.8",
+        "restaurant_id": 6,
+        "name": "Subz Miloni",
+        "description": "Mixed vegetables cooked in a delicate gravy.",
+        "isVeg": "Veg",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Subz Miloni.jpg"
+      },
+      {
+        "id": "6.9",
+        "restaurant_id": 6,
+        "name": "Hara Kebab",
+        "description": "Spinach and lentil patties, shallow fried.",
+        "isVeg": "Veg",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Hara Kebab.jpg"
+      },
+      {
+        "id": "6.10",
+        "restaurant_id": 6,
+        "name": "Kulfi Badami",
+        "description": "Traditional Indian ice cream with almonds.",
+        "isVeg": "Veg",
+        "price": "400",
+        "imageUrl": "assets/Menu Images/Kulfi Badami.jpg"
       }
     ]
   },
@@ -166,19 +579,89 @@
     "menu": [
       {
         "id": "7.1",
-        "restaurant_id":7,
+        "restaurant_id": 7,
         "name": "Truffle Fries",
         "description": "Crispy fries topped with truffle oil and parmesan.",
-        "price": "350",
+        "isVeg": "Veg",
+        "price": "400",
         "imageUrl": "assets/Menu Images/Truffle Fries.jpg"
       },
       {
         "id": "7.2",
-        "restaurant_id":7,
+        "restaurant_id": 7,
         "name": "Pasta Primavera",
         "description": "Pasta with fresh vegetables and creamy sauce.",
-        "price": "550",
+        "isVeg": "Veg",
+        "price": "600",
         "imageUrl": "assets/Menu Images/Pasta Primavera.jpg"
+      },
+      {
+        "id": "7.3",
+        "restaurant_id": 7,
+        "name": "Kerala Spiced Prawns",
+        "description": "Prawns tossed in traditional Kerala spices.",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Kerala Spiced Prawns.jpg"
+      },
+      {
+        "id": "7.4",
+        "restaurant_id": 7,
+        "name": "Mezze Platter",
+        "description": "Assortment of Middle Eastern dips with pita bread.",
+        "isVeg": "Veg",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Mezze Platter.jpg"
+      },
+      {
+        "id": "7.5",
+        "restaurant_id": 7,
+        "name": "Grilled Red Snapper",
+        "description": "Fresh red snapper grilled with herbs and lemon.",
+        "price": "900",
+        "imageUrl": "assets/Menu Images/Grilled Red Snapper.jpg"
+      },
+      {
+        "id": "7.6",
+        "restaurant_id": 7,
+        "name": "Thai Green Curry",
+        "description": "Choice of vegetable or chicken in green curry sauce.",
+         "isVeg": "Veg",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Thai Green Curry Veg.jpg"
+      },
+      {
+        "id": "7.7",
+        "restaurant_id": 7,
+        "name": "Beef Steak",
+        "description": "Tender beef steak with mashed potatoes and sauce.",
+        "price": "1100",
+        "imageUrl": "assets/Menu Images/Beef Steak.jpg"
+      },
+      {
+        "id": "7.8",
+        "restaurant_id": 7,
+        "name": "Mushroom Cappuccino Soup",
+        "description": "Creamy mushroom soup with a frothy top.",
+        "isVeg": "Veg",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Mushroom Cappuccino Soup.jpg"
+      },
+      {
+        "id": "7.9",
+        "restaurant_id": 7,
+        "name": "Chicken Satay",
+        "description": "Grilled chicken skewers with peanut sauce.",
+        "price": "500",
+        "imageUrl": "assets/Menu Images/Chicken Satay.jpg"
+      },
+      {
+        "id": "7.10",
+        "restaurant_id": 7,
+        "name": "Chocolate Fondant",
+        "description": "Warm chocolate lava cake with vanilla ice cream.",
+        "isVeg": "Veg",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Chocolate Fondant.jpg"
       }
     ]
   },
@@ -192,19 +675,89 @@
     "menu": [
       {
         "id": "8.1",
-        "restaurant_id":8,
+        "restaurant_id": 8,
         "name": "Vada Pav",
         "description": "Classic Bombay street food with spicy chutney.",
-        "price": "150",
+        "isVeg": "Veg",
+        "price": "200",
         "imageUrl": "assets/Menu Images/Vada Pav.jpg"
       },
       {
         "id": "8.2",
-        "restaurant_id":8,
+        "restaurant_id": 8,
         "name": "Bhel Puri",
         "description": "Crispy puffed rice with tangy tamarind chutney.",
-        "price": "120",
+        "isVeg": "Veg",
+        "price": "180",
         "imageUrl": "assets/Menu Images/Bhel Puri.jpg"
+      },
+      {
+        "id": "8.3",
+        "restaurant_id": 8,
+        "name": "Kejriwal Toast",
+        "description": "Eggs on toast with chili cheese, canteen style.",
+         "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Kejriwal Toast.jpg"
+      },
+      {
+        "id": "8.4",
+        "restaurant_id": 8,
+        "name": "Chorizo Pav",
+        "description": "Spicy Goan sausage served with pav.",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Chorizo Pav.jpg"
+      },
+      {
+        "id": "8.5",
+        "restaurant_id": 8,
+        "name": "Arbi Tuk Chaat",
+        "description": "Crispy fried colocasia root chaat.",
+        "isVeg": "Veg",
+        "price": "280",
+        "imageUrl": "assets/Menu Images/Arbi Tuk Chaat.jpg"
+      },
+      {
+        "id": "8.6",
+        "restaurant_id": 8,
+        "name": "Chettinad Prawns",
+        "description": "Spicy Chettinad style prawns.",
+        "price": "550",
+        "imageUrl": "assets/Menu Images/Chettinad Prawns.jpg"
+      },
+      {
+        "id": "8.7",
+        "restaurant_id": 8,
+        "name": "Gulab Nut",
+        "description": "Gulab jamun meets donut, served with pista cream.",
+        "isVeg": "Veg",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Gulab Nut.jpg"
+      },
+      {
+        "id": "8.8",
+        "restaurant_id": 8,
+        "name": "Tandoori Pork Ribs",
+        "description": "Smoky tandoori pork ribs with glaze.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Tandoori Pork Ribs.jpg"
+      },
+      {
+        "id": "8.9",
+        "restaurant_id": 8,
+        "name": "Banana Leaf Wrapped Fish",
+        "description": "Fish marinated in coastal spices, steamed in banana leaf.",
+        "price": "600",
+        "imageUrl": "assets/Menu Images/Banana Leaf Wrapped Fish.jpg"
+      },
+      {
+        "id": "8.10",
+        "restaurant_id": 8,
+        "name": "Coffee Rasgulla",
+        "description": "Rasgulla soaked in coffee syrup, a unique fusion.",
+        "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Coffee Rasgulla.jpg"
       }
     ]
   },
@@ -218,19 +771,87 @@
     "menu": [
       {
         "id": "9.1",
-        "restaurant_id":9,
+        "restaurant_id": 9,
         "name": "Berry Pulav",
         "description": "Rice with berries and spices, a Parsi delicacy.",
-        "price": "550",
+        "price": "600",
         "imageUrl": "assets/Menu Images/Berry Pulav.jpg"
       },
       {
         "id": "9.2",
-        "restaurant_id":9,
-        "name": "Patra",
-        "description": "Taro leaves stuffed with spices, rolled and steamed.",
-        "price": "200",
-        "imageUrl": "assets/Menu Images/Patra.jpg"
+        "restaurant_id": 9,
+        "name": "Patra Ni Machhi",
+        "description": "Fish coated in green chutney, steamed in banana leaf.",
+        "price": "700",
+        "imageUrl": "assets/Menu Images/Patra Ni Machhi.jpg"
+      },
+      {
+        "id": "9.3",
+        "restaurant_id": 9,
+        "name": "Salli Boti",
+        "description": "Mutton curry topped with crispy potato straws.",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Salli Boti.jpg"
+      },
+      {
+        "id": "9.4",
+        "restaurant_id": 9,
+        "name": "Dhansak",
+        "description": "Parsi lentil and meat stew served with brown rice.",
+        "price": "620",
+        "imageUrl": "assets/Menu Images/Dhansak.jpg"
+      },
+      {
+        "id": "9.5",
+        "restaurant_id": 9,
+        "name": "Akuri on Toast",
+        "description": "Spicy scrambled eggs on toast, Parsi style.",
+         "isVeg": "Veg",
+        "price": "350",
+        "imageUrl": "assets/Menu Images/Akuri on Toast.jpg"
+      },
+      {
+        "id": "9.6",
+        "restaurant_id": 9,
+        "name": "Chicken Farcha",
+        "description": "Parsi style fried chicken.",
+        "price": "450",
+        "imageUrl": "assets/Menu Images/Chicken Farcha.jpg"
+      },
+      {
+        "id": "9.7",
+        "restaurant_id": 9,
+        "name": "Lagan nu Custard",
+        "description": "Traditional Parsi baked custard.",
+        "isVeg": "Veg",
+        "price": "300",
+        "imageUrl": "assets/Menu Images/Lagan nu Custard.jpg"
+      },
+      {
+        "id": "9.8",
+        "restaurant_id": 9,
+        "name": "Kheema Pav",
+        "description": "Spicy minced meat served with pav bread.",
+        "price": "480",
+        "imageUrl": "assets/Menu Images/Kheema Pav.jpg"
+      },
+      {
+        "id": "9.9",
+        "restaurant_id": 9,
+        "name": "Vada Pav",
+        "description": "Bombay's favorite street snack.",
+        "isVeg": "Veg",
+        "price": "180",
+        "imageUrl": "assets/Menu Images/Vada Pav SBOW.jpg"
+      },
+      {
+        "id": "9.10",
+        "restaurant_id": 9,
+        "name": "Raspberry Soda",
+        "description": "Classic Parsi sweet raspberry flavored soda.",
+        "isVeg": "Veg",
+        "price": "150",
+        "imageUrl": "assets/Menu Images/Raspberry Soda.jpg"
       }
     ]
   },
@@ -244,19 +865,87 @@
     "menu": [
       {
         "id": "10.1",
-        "restaurant_id":10,
-        "name": "Murg Malai Kebab",
+        "restaurant_id": 10,
+        "name": "Murgh Malai Kebab",
         "description": "Tender chicken marinated in cream and spices.",
-        "price": "600",
-        "imageUrl": "assets/Menu Images/Murg Malai Kebab .jpg"
+        "price": "800",
+        "imageUrl": "assets/Menu Images/Murgh Malai Kebab Peshawri.jpg"
       },
       {
         "id": "10.2",
-        "restaurant_id":10,
+        "restaurant_id": 10,
         "name": "Dal Bukhara",
         "description": "Slow-cooked black lentils with butter.",
-        "price": "350",
-        "imageUrl": "assets/Menu Images/Dal Bukhara.jpg"
+        "isVeg": "Veg",
+        "price": "650",
+        "imageUrl": "assets/Menu Images/Dal Bukhara Peshawri.jpg"
+      },
+      {
+        "id": "10.3",
+        "restaurant_id": 10,
+        "name": "Sikandari Raan",
+        "description": "Whole leg of lamb marinated overnight and cooked in tandoor.",
+        "price": "2800",
+        "imageUrl": "assets/Menu Images/Sikandari Raan Peshawri.jpg"
+      },
+      {
+        "id": "10.4",
+        "restaurant_id": 10,
+        "name": "Paneer Tikka",
+        "description": "Cottage cheese marinated in yogurt and spices, grilled.",
+        "isVeg": "Veg",
+        "price": "700",
+        "imageUrl": "assets/Menu Images/Paneer Tikka Peshawri.jpg"
+      },
+      {
+        "id": "10.5",
+        "restaurant_id": 10,
+        "name": "Tandoori Pomfret",
+        "description": "Whole pomfret fish marinated and grilled in the tandoor.",
+        "price": "1500",
+        "imageUrl": "assets/Menu Images/Tandoori Pomfret.jpg"
+      },
+      {
+        "id": "10.6",
+        "restaurant_id": 10,
+        "name": "Seekh Kebab",
+        "description": "Minced lamb skewers flavored with herbs and spices.",
+        "price": "850",
+        "imageUrl": "assets/Menu Images/Seekh Kebab Peshawri.jpg"
+      },
+      {
+        "id": "10.7",
+        "restaurant_id": 10,
+        "name": "Barrah Kebab",
+        "description": "Tandoori lamb chops marinated in traditional spices.",
+        "price": "1100",
+        "imageUrl": "assets/Menu Images/Barrah Kebab.jpg"
+      },
+      {
+        "id": "10.8",
+        "restaurant_id": 10,
+        "name": "Garlic Naan",
+        "description": "Soft naan bread flavored with garlic and butter.",
+        "isVeg": "Veg",
+        "price": "180",
+        "imageUrl": "assets/Menu Images/Garlic Naan Peshawri.jpg"
+      },
+      {
+        "id": "10.9",
+        "restaurant_id": 10,
+        "name": "Reshmi Kebab",
+        "description": "Creamy and succulent chicken kebabs.",
+        "price": "750",
+        "imageUrl": "assets/Menu Images/Reshmi Kebab Peshawri.jpg"
+      },
+      {
+        "id": "10.10",
+        "restaurant_id": 10,
+        "name": "Phirni",
+        "description": "Creamy ground rice pudding served chilled.",
+        "isVeg": "Veg",
+        "price": "400",
+        "imageUrl": "assets/Menu Images/Phirni Peshawri.jpg"
       }
     ]
   }
