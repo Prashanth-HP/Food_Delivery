@@ -5,7 +5,7 @@
     "cuisine": "Modern Indian",
     "location": "New Delhi",
     "rating": 4.9,
-    "imageUrl": "assets/Restaurant images/Indian Accent.jpg",
+    "imageUrl": "assets/Restaurant_images/IndianAccent.jpg",
     "menu": [
       {
         "id": "1.1",
@@ -135,7 +135,7 @@
         "name": "Murgh Malai Kebab",
         "description": "Creamy chicken kebabs marinated in cheese and spices.",
         "price": "650",
-        "imageUrl": "assets/Menu Images/Murgh Malai Kebab.jpg"
+        "imageUrl": "assets/Menu Images/Murg Malai Kebab.jpg"
       },
       {
         "id": "2.5",
@@ -144,7 +144,7 @@
         "description": "Cottage cheese cubes marinated and grilled in tandoor.",
         "isVeg": "Veg",
         "price": "500",
-        "imageUrl": "assets/Menu Images/Paneer Tikka Bukhara.jpg"
+        "imageUrl": "assets/Menu Images/Paneer Tikka.jpg"
       },
       {
         "id": "2.6",
@@ -238,7 +238,7 @@
         "description": "Steamed soybeans lightly salted.",
         "isVeg": "Veg",
         "price": "600",
-        "imageUrl": "assets/Menu Images/Edamame.jpg"
+        "imageUrl": "assets/Menu Images/Edamame.jpeg"
       },
       {
         "id": "3.6",
@@ -504,7 +504,7 @@
         "name": "Kakori Kebab",
         "description": "Soft minced lamb kebabs, an Awadhi specialty.",
         "price": "800",
-        "imageUrl": "assets/Menu Images/Kakori Kebab.jpg"
+        "imageUrl": "assets/Menu Images/Kakori Kebab.jpeg"
       },
       {
         "id": "6.4",
@@ -627,7 +627,7 @@
         "description": "Choice of vegetable or chicken in green curry sauce.",
          "isVeg": "Veg",
         "price": "650",
-        "imageUrl": "assets/Menu Images/Thai Green Curry Veg.jpg"
+        "imageUrl": "assets/Menu Images/Thai Green Curry.jpg"
       },
       {
         "id": "7.7",
@@ -799,7 +799,7 @@
         "name": "Dhansak",
         "description": "Parsi lentil and meat stew served with brown rice.",
         "price": "620",
-        "imageUrl": "assets/Menu Images/Dhansak.jpg"
+        "imageUrl": "assets/Menu Images/Dhansak.jpeg"
       },
       {
         "id": "9.5",
@@ -808,7 +808,7 @@
         "description": "Spicy scrambled eggs on toast, Parsi style.",
          "isVeg": "Veg",
         "price": "350",
-        "imageUrl": "assets/Menu Images/Akuri on Toast.jpg"
+        "imageUrl": "assets/Menu Images/Akuri on Toast.jpeg"
       },
       {
         "id": "9.6",
@@ -842,7 +842,7 @@
         "description": "Bombay's favorite street snack.",
         "isVeg": "Veg",
         "price": "180",
-        "imageUrl": "assets/Menu Images/Vada Pav SBOW.jpg"
+        "imageUrl": "assets/Menu Images/Vada Pav.jpg"
       },
       {
         "id": "9.10",
@@ -869,7 +869,7 @@
         "name": "Murgh Malai Kebab",
         "description": "Tender chicken marinated in cream and spices.",
         "price": "800",
-        "imageUrl": "assets/Menu Images/Murgh Malai Kebab Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Murgh Malai Kebab.jpeg"
       },
       {
         "id": "10.2",
@@ -878,7 +878,7 @@
         "description": "Slow-cooked black lentils with butter.",
         "isVeg": "Veg",
         "price": "650",
-        "imageUrl": "assets/Menu Images/Dal Bukhara Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Dal Bukhara.jpg"
       },
       {
         "id": "10.3",
@@ -886,7 +886,7 @@
         "name": "Sikandari Raan",
         "description": "Whole leg of lamb marinated overnight and cooked in tandoor.",
         "price": "2800",
-        "imageUrl": "assets/Menu Images/Sikandari Raan Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Sikandari Raan.jpg"
       },
       {
         "id": "10.4",
@@ -895,7 +895,7 @@
         "description": "Cottage cheese marinated in yogurt and spices, grilled.",
         "isVeg": "Veg",
         "price": "700",
-        "imageUrl": "assets/Menu Images/Paneer Tikka Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Paneer Tikka.jpg"
       },
       {
         "id": "10.5",
@@ -903,7 +903,7 @@
         "name": "Tandoori Pomfret",
         "description": "Whole pomfret fish marinated and grilled in the tandoor.",
         "price": "1500",
-        "imageUrl": "assets/Menu Images/Tandoori Pomfret.jpg"
+        "imageUrl": "assets/Menu Images/Tandoori Pomfret.jpeg"
       },
       {
         "id": "10.6",
@@ -911,7 +911,7 @@
         "name": "Seekh Kebab",
         "description": "Minced lamb skewers flavored with herbs and spices.",
         "price": "850",
-        "imageUrl": "assets/Menu Images/Seekh Kebab Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Seekh Kebab.jpg"
       },
       {
         "id": "10.7",
@@ -928,7 +928,7 @@
         "description": "Soft naan bread flavored with garlic and butter.",
         "isVeg": "Veg",
         "price": "180",
-        "imageUrl": "assets/Menu Images/Garlic Naan Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Garlic Naan.jpeg"
       },
       {
         "id": "10.9",
@@ -936,7 +936,7 @@
         "name": "Reshmi Kebab",
         "description": "Creamy and succulent chicken kebabs.",
         "price": "750",
-        "imageUrl": "assets/Menu Images/Reshmi Kebab Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Reshmi Kebab.jpg"
       },
       {
         "id": "10.10",
@@ -945,7 +945,7 @@
         "description": "Creamy ground rice pudding served chilled.",
         "isVeg": "Veg",
         "price": "400",
-        "imageUrl": "assets/Menu Images/Phirni Peshawri.jpg"
+        "imageUrl": "assets/Menu Images/Phirni.jpeg"
       }
     ]
   }

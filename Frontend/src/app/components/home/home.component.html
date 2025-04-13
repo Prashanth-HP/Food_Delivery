@@ -44,30 +44,38 @@
 </div>
 <!-- Add this chatbot UI to your home.component.html -->
 
-<div class="chatbot-container">
+<!-- Chatbot Floating Button -->
+<!-- Floating Chatbot Button -->
+
+
+<!-- Chatbot Container -->
+<!-- Chatbot Container -->
+<div class="chatbot-container" [ngClass]="{ 'active': isChatVisible, 'hidden': !isChatVisible }">
   <div class="chat-wrapper">
     <div class="chat-header">
-    <img src="assets/bot.svg" alt="Avatar">
-    <div class="header-text">
-      <h3>Chat with QuickBot</h3>
-      <span>Ask about food or your order status.</span>
+      <img src="assets/bot.svg" alt="Chatbot Avatar">
+      <div class="header-text">
+        <h3>Chat with QuickBot</h3>
+        <span>Ask about food or your order status.</span>
+      </div>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div *ngFor="let msg of messages" [ngClass]="{'message': true, 'bot': msg.sender === 'bot', 'user': msg.sender === 'user'}">
+        {{ msg.text }}
+      </div>
+      <div class="quick-buttons">
+        <button (click)="sendPredefinedMessage('Show available food')">Show available food</button>
+        <button (click)="sendPredefinedMessage('Track my order')">Track my order</button>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input [(ngModel)]="userInput" placeholder="Type a message..." />
+      <button class="send-btn" (click)="sendMessage()">➤</button>
     </div>
   </div>
-
-  <div class="chat-body" id="chat-body">
-    <div class="message bot">👋 Hi! What can I help you with today?</div>
-    <div class="quick-buttons">
-      <button onclick="userQuery('Show available food')">Show available food</button>
-      <button onclick="userQuery('Track my order')">Track my order</button>
-    </div>
-  </div>
-
-  <div class="chat-input-area">
-    <span class="attach">📎</span>
-    <input type="text" id="chat-input" placeholder="Enter your message..." onkeypress="handleKeyPress(event)">
-    <span class="emoji">😊</span>
-    <button class="send-btn" onclick="sendMessage()">➤</button>
-  </div>
-</div>
 </div>
 
+<!-- Chat Toggle Button -->
+<button class="chat-toggle-btn" (click)="toggleChatVisibility()">
+  🤖
+</button>
