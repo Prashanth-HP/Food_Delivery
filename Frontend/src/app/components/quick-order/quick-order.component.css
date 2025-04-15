@@ -13,79 +13,71 @@
   letter-spacing: 0.5px;
 }
 
-/* Enhanced Filters Section */
-/* Container for Filter Controls */
 .filter-controls {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.2rem; /* Spacing between controls */
-  margin-bottom: 2rem; /* Space below the control bar */
-  background: #f9f9f9; /* Slightly off-white background for subtle contrast */
-  padding: 15px 25px; /* Generous padding */
-  border-radius: 15px; /* Moderately rounded corners for the container */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+  gap: 1.2rem; 
+  margin-bottom: 2rem; 
+  background: #f9f9f9; 
+  padding: 15px 25px; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
 }
 
-/* Styling for the Select Dropdowns within the Filter Controls */
 .filter-controls select {
-  padding: 10px 16px; /* Padding similar to NEW STYLE example */
-  font-size: 16px; /* Font size from NEW STYLE example */
-  border-radius: 30px; /* Highly rounded corners like NEW STYLE */
-  border: 2px solid #ff9800; /* Amber border like .filter-select */
-  background-color: #fff; /* White background */
-  color: #333; /* Standard text color */
-  outline: none; /* Remove default outline */
-  transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow like .filter-select */
-  min-width: 180px; /* Retain minimum width if needed */
-  cursor: pointer; /* Indicate interactivity */
-  appearance: none; /* Remove default system appearance */
+  padding: 10px 16px; 
+  font-size: 16px; 
+  border-radius: 30px; 
+  border: 2px solid #ff9800; 
+  background-color: #fff; 
+  color: #333; 
+  outline: none; 
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+  min-width: 180px; 
+  cursor: pointer; 
+  appearance: none; 
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-right: 40px; /* Add space for custom arrow if using one */
+  padding-right: 40px; 
 }
 
-/* Focus State for Select Dropdowns */
 .filter-controls select:focus {
-  border-color: #f57c00; /* Darker amber border on focus */
-  box-shadow: 0 0 8px rgba(245, 124, 0, 0.4); /* Amber glow effect on focus */
+  border-color: #f57c00; 
+  box-shadow: 0 0 8px rgba(245, 124, 0, 0.4); 
 }
 
-/* Styling for the Reset Button */
 .filter-controls .reset-btn {
-  padding: 10px 20px; /* Padding similar to select/search */
-  font-size: 16px; /* Matching font size */
-  border: none; /* Remove default border */
-  border-radius: 30px; /* Highly rounded corners */
-  background-color: #ff5722; /* Orange background like .search-input border */
-  color: white; /* White text for contrast */
-  cursor: pointer; /* Indicate interactivity */
-  outline: none; /* Remove default outline */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  font-weight: 500; /* Slightly bolder text */
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 30px; 
+  background-color: #ff5722; 
+  color: white; 
+  cursor: pointer; 
+  outline: none; 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-weight: 500; 
 }
 
-/* Hover State for Reset Button */
 .filter-controls .reset-btn:hover {
-  background-color: #e64a19; /* Darker orange on hover, like .search-input focus border */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow on hover */
+  background-color: #e64a19; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
-/* Optional: Add a focus state matching the select's focus style */
 .filter-controls .reset-btn:focus {
-    box-shadow: 0 0 8px rgba(230, 74, 25, 0.5); /* Orange glow effect */
+    box-shadow: 0 0 8px rgba(230, 74, 25, 0.5); 
 }
-/* Grid for cards */
+
 .quick-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
 }
 
-/* Card styling */
 .quick-card {
   background-color: #fff;
   border-radius: 16px;
@@ -108,7 +100,6 @@
   object-fit: cover;
 }
 
-/* Card content */
 .quick-details {
   padding: 1.2rem;
   text-align: center;
@@ -126,7 +117,6 @@
   margin-bottom: 1rem;
 }
 
-/* Order button */
 .quick-order-btn {
   padding: 0.65rem 1.3rem;
   background-color: #ff5722;
@@ -143,7 +133,6 @@
   box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
 }
 
-/* No results */
 .no-results {
   text-align: center;
   font-size: 1.15rem;
@@ -151,7 +140,6 @@
   margin-top: 2.5rem;
 }
 
-/* Responsive Enhancements */
 @media (max-width: 768px) {
   .quick-title {
     font-size: 1.7rem;
