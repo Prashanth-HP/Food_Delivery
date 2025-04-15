@@ -14,7 +14,7 @@ interface Message {
 export class HomeComponent implements OnInit {
   isChatVisible: boolean = false;
   message: string = '';
-  userInput = '';  // Bound to input field using ngModel
+  userInput = '';  
   messages: Message[] = [];
   restaurantInfo: any;
 
@@ -29,30 +29,26 @@ export class HomeComponent implements OnInit {
   sendMessage(): void {
     const userMessage = this.userInput.trim();
     if (userMessage) {
-      // Add user message to messages array
+
       this.messages.push({ text: userMessage, sender: 'user' });
 
-      // Get bot response
       const botResponse = this.getBotResponse(userMessage);
 
-      // Add bot response to messages array
       this.messages.push({ text: botResponse, sender: 'bot' });
 
-      // Clear the input after sending the message
       this.userInput = '';
     }
   }
 
   handleKeyPress(event: KeyboardEvent): void {
     if (event.key === 'Enter') {
-      this.sendMessage(); // Call sendMessage() without passing input.value
+      this.sendMessage(); 
     }
   }
 
   getBotResponse(userMessage: string): string {
     const msg = userMessage.toLowerCase();
 
-    // Handle menu query
     if (msg.includes('menu') || msg.includes('available food')) {
       if (this.restaurantInfo.menu && this.restaurantInfo.menu.length > 0) {
         return this.restaurantInfo.menu
@@ -62,17 +58,14 @@ export class HomeComponent implements OnInit {
       return "Sorry, I couldn't fetch the menu at the moment.";
     }
 
-    // Handle timing query
     if (msg.includes('timing') || msg.includes('open')) {
       return `We are open from ${this.restaurantInfo.openingHours}.`;
     }
 
-    // Handle location query
     if (msg.includes('location') || msg.includes('where')) {
       return `We are located at ${this.restaurantInfo.location}.`;
     }
 
-    // Handle reviews query
     if (msg.includes('reviews') || msg.includes('feedback')) {
       if (this.restaurantInfo.reviews && this.restaurantInfo.reviews.length > 0) {
         return this.restaurantInfo.reviews
@@ -82,7 +75,6 @@ export class HomeComponent implements OnInit {
       return "No reviews available at the moment.";
     }
 
-    // Handle special offer query
     if (msg.includes('offer') || msg.includes('discount')) {
       if (this.restaurantInfo.specialOffer) {
         return `Special Offer: ${this.restaurantInfo.specialOffer.description} (Validity: ${this.restaurantInfo.specialOffer.validity})`;
