@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   closeDropdown(): void {
-    // Close dropdown if it's open, useful for clicking outside later
+
     if (this.isDropdownOpen) {
         this.isDropdownOpen = false;
     }
@@ -32,7 +32,7 @@ export class AppComponent {
   }
 
   logout(): void {
-    this.closeDropdown(); // Close dropdown first
+    this.closeDropdown(); 
     this.auth.logout();
   }
 }
