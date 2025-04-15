@@ -1,4 +1,3 @@
-/* Wrapper */
 .dine-wrapper {
   padding: 40px 20px;
   background: linear-gradient(135deg, #fffaf0, #fce4ec);
@@ -6,7 +5,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Title */
 .dine-title {
   text-align: center;
   font-size: 2.5rem;
@@ -15,7 +13,6 @@
   font-weight: 700;
 }
 
-/* Search and Filter */
 .search-filter-container {
   display: flex;
   justify-content: center;
@@ -60,14 +57,12 @@
   box-shadow: 0 0 8px rgba(245, 124, 0, 0.4);
 }
 
-/* Restaurant Grid */
 .restaurant-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-/* Restaurant Card */
 .restaurant-card {
   background-color: #fff;
   border-radius: 15px;
@@ -90,7 +85,6 @@
   object-fit: cover;
 }
 
-/* Details */
 .restaurant-details {
   padding: 18px 20px;
   display: flex;
@@ -133,7 +127,6 @@
   background-color: #ff5722;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .dine-title {
     font-size: 2rem;
@@ -186,4 +179,3 @@
 .reset-btn:hover {
   background-color: #d32f2f;
 }
-
