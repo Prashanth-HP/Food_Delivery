@@ -2,18 +2,16 @@ import { Request, Response } from 'express';
 import pool from '../config/db.js';
 import { RowDataPacket } from 'mysql2';
 
-// Define the Order interface
 interface Order extends RowDataPacket {
   id: number;
   restaurant_id: number;
-  items: string; // JSON string representing the items
+  items: string; 
   total_price: number;
   delivery_address: string;
   status: string;
   created_at: Date;
 }
 
-// Get all orders
 export const getOrders = async (req: Request, res: Response): Promise<void> => {
   try {
     const [rows] = await pool.query<Order[]>('SELECT * FROM orders');
@@ -23,7 +21,6 @@ export const getOrders = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-// Get an order by ID
 export const getOrderById = async (req: Request, res: Response): Promise<void> => {
   try {
     const { id } = req.params;
@@ -40,7 +37,6 @@ export const getOrderById = async (req: Request, res: Response): Promise<void> =
   }
 };
 
-// Create a new order
 export const createOrder = async (req: Request, res: Response): Promise<void> => {
   const { restaurant_id, items, total_price, delivery_address } = req.body;
 
@@ -60,12 +56,10 @@ export const createOrder = async (req: Request, res: Response): Promise<void> =>
   }
 };
 
-// Update an order's status (for automatic progression)
 export const updateOrderStatus = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   const { status } = req.body;
 
-  // Validate status against allowed values
   const allowedStatuses = ['Pending', 'Preparing', 'Out for Delivery', 'Delivered'];
   if (!status || !allowedStatuses.includes(status)) {
     res.status(400).json({ error: 'Invalid status' });
@@ -73,15 +67,14 @@ export const updateOrderStatus = async (req: Request, res: Response): Promise<vo
   }
 
   try {
-    // First check if order exists
+
     const [checkRows]: any = await pool.query('SELECT id FROM orders WHERE id = ?', [id]);
-    
+
     if (checkRows.length === 0) {
       res.status(404).json({ error: 'Order not found' });
       return;
     }
 
-    // Then update the status
     const [result]: any = await pool.query(
       'UPDATE orders SET status = ? WHERE id = ?',
       [status, id]
@@ -97,12 +90,11 @@ export const updateOrderStatus = async (req: Request, res: Response): Promise<vo
   }
 };
 
-// Delete an order
 export const deleteOrder = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
 
   try {
-    // Prevent deletion of orders that are "Out for Delivery"
+
     const [result]: any = await pool.query(
       'DELETE FROM orders WHERE id = ? AND status != "Out for Delivery"',
       [id]
