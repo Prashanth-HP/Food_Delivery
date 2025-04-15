@@ -24,7 +24,6 @@ export class RestaurantDetailComponent implements OnInit {
         });
     }
 
-  // Make sure this function is present
   toggleMenu(): void {
     this.showMenu = !this.showMenu;
   }
