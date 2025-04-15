@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.get('/', getOrders); // GET /api/orders
-router.get('/:id', getOrderById); // GET /api/orders/:id
-router.post('/', createOrder); // POST /api/orders
-router.put('/:id', updateOrderStatus); // PUT /api/orders/:id
-router.delete('/:id', deleteOrder); // DELETE /api/orders/:id
+router.get('/', getOrders); 
+router.get('/:id', getOrderById); 
+router.post('/', createOrder); 
+router.put('/:id', updateOrderStatus); 
+router.delete('/:id', deleteOrder); 
 
 export default router;
