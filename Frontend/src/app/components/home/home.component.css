@@ -4,7 +4,6 @@
   background-color: #fffdfb;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(45deg, #ff6e40, #ff3d00);
   color: white;
@@ -41,7 +40,6 @@
   transform: scale(1.05);
 }
 
-/* Features Section */
 .features {
   text-align: center;
   margin-bottom: 40px;
@@ -67,7 +65,6 @@
   color: #ff5722;
 }
 
-/* Categories */
 .categories {
   text-align: center;
   margin-bottom: 40px;
@@ -87,7 +84,6 @@
   font-weight: 600;
 }
 
-/* Testimonials */
 .testimonial {
   background-color: #fff7f0;
   padding: 30px 20px;
@@ -109,7 +105,6 @@
   color: #ff3d00;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .feature-grid {
     flex-direction: column;
@@ -118,7 +113,7 @@
 }
 .chatbot-container {
   position: fixed;
-  bottom: 70px; /* Slightly raise it from the very bottom to give space */
+  bottom: 70px; 
   right: 20px;
   width: 350px;
   height: 450px;
@@ -130,7 +125,6 @@
   transition: all 0.3s ease;
 }
 
-/* Show chat container when active */
 .chatbot-container.active {
   display: block;
 }
@@ -138,15 +132,12 @@
   display: none;
 }
 
-
-
-/* Chatbot header */
 .chat-header {
   display: flex;
   padding: 15px;
-  background-color: #ff3d00; /* Header background */
+  background-color: #ff3d00; 
   color: white;
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  border-radius: 10px 10px 0 0; 
   align-items: center;
   justify-content: space-between;
 }
@@ -171,13 +162,12 @@
   font-size: 12px;
 }
 
-/* Chat body area */
 .chat-body {
   padding: 15px;
   max-height: 350px;
   overflow-y: auto;
   font-size: 14px;
-  padding-bottom: 150px; /* Adds space for the input area */
+  padding-bottom: 150px; 
 }
 
 .chat-body .message {
@@ -218,14 +208,13 @@
   background-color: #ff3d00;
 }
 
-/* Chat input area */
 .chat-input-area {
   display: flex;
   padding: 10px;
   border-top: 1px solid #ddd;
   align-items: center;
   background-color: #f9f9f9;
-  margin-top: 20px; /* This will push the input area further down */
+  margin-top: 20px; 
 }
 
 .chat-input-area input {
@@ -251,7 +240,6 @@
   background-color: #ff3d00;
 }
 
-/* Chat toggle button */
 .chat-toggle-btn {
   position: fixed;
   bottom: 20px;
