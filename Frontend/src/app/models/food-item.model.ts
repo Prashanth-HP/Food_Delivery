@@ -4,7 +4,7 @@ export interface FoodItem {
   price: number;
   imageUrl: string;
   description: string;
-  category: string;   // ✅ use 'category' to describe Veg/Non-Veg
+  category: string;  
   quantity: number;
   restaurant_id: number;
 }
