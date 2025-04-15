@@ -11,7 +11,7 @@ export class OrderMealService {
   private apiUrl="http://localhost:3000/api/orders";
   constructor(private http:HttpClient){}
   placeOrder(order: Order): Observable<any> {
-    order.id = this.orders.length + 1; // Auto-generate ID
+    order.id = this.orders.length + 1; 
     this.orders.push(order);
     return this.http.post(this.apiUrl,order);
   }
@@ -22,7 +22,7 @@ export class OrderMealService {
   getOrderss(): Observable<Order[]> {
         return this.http.get<Order[]>(this.apiUrl).pipe(
           tap((data) => {
-            console.log('Fetched orders:', data);  // Add this line
+            console.log('Fetched orders:', data);  
           })
       );
     }
@@ -36,7 +36,7 @@ export class OrderMealService {
   }
 
   cancelOrder(orderId: number): Observable<any> {
-    // Uses the existing DELETE endpoint which has the necessary status checks
+
     return this.http.delete(`${this.apiUrl}/${orderId}`);
   }
 }
