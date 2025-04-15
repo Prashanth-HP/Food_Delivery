@@ -8,7 +8,6 @@ export class CartService {
   private items: FoodItem[] = [];
   private restaurant_id: number=-1;
 
-  // ✅ Add item to cart
   addToCart(item: any) {
     if (this.items.length === 0) {
       this.restaurant_id = item.restaurant_id;
@@ -21,33 +20,29 @@ export class CartService {
       this.items.push({ ...item, quantity: 1 });
     }
     console.log("Done adding");
-    
+
   }
 
-  // ✅ Get all items
   getCartItems(): FoodItem[] {
     return this.items;
   }
   getResId():number {
     return this.restaurant_id;
   }
-  // ✅ Remove an item completely
+
   removeFromCart(item: FoodItem) {
     this.items = this.items.filter(i => i.id !== item.id);
   }
 
-  // ✅ Update quantity manually
   updateQuantity(item: FoodItem, quantity: number) {
     const target = this.items.find(i => i.id === item.id);
     if (target) target.quantity = quantity;
   }
 
-  // ✅ Clear cart
   clearCart() {
     this.items = [];
   }
 
-  // ✅ Total with quantity
   getTotalAmount(): number {
     return this.items.reduce((total, item) => total + (item.price * item.quantity), 0);
   }
