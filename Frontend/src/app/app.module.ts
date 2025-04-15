@@ -17,9 +17,8 @@ import { FilterFoodPipe } from './pipes/filter-food.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { OrdersComponent } from './components/orders/orders.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Required for animations
-import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { ToastrModule } from 'ngx-toastr'; 
 
 @NgModule({
   declarations: [
@@ -42,11 +41,11 @@ import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule, // Add this
-    ToastrModule.forRoot({ // Add this
-      timeOut: 2000, // Duration of the toast
-      positionClass: 'toast-top-right', // Position of the toast
-      preventDuplicates: true, // Prevent duplicate toasts
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot({ 
+      timeOut: 2000, 
+      positionClass: 'toast-top-right', 
+      preventDuplicates: true, 
     }),
   ],
   providers: [],
