@@ -1,4 +1,4 @@
-// dine-detail.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
