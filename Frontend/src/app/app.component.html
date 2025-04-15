@@ -1,41 +1,40 @@
 <nav class="nav-bar">
-  <!-- Logo Section -->
+  
   <div routerLink="/" routerLinkActive="active-link" style="cursor: pointer;" class="logo-section">
     <img src="assets/logo.png" alt="App Logo" class="app-logo" />
     <span class="app-title">QuickBite</span>
   </div>
 
-  <!-- Wrapper for Central Navigation Links -->
+  
   <div class="nav-links-center">
     <a routerLink="/dine" routerLinkActive="active-link">Dine</a>
     <a routerLink="/quick-order" routerLinkActive="active-link">Quick Order</a>
     <a routerLink="/favorites" routerLinkActive="active-link">Favorite</a>
-    <a routerLink="/cart" class="nav-link"> <!-- Added nav-link class for consistency if needed -->
+    <a routerLink="/cart" class="nav-link"> 
       🛒 Cart ({{ getCartCount() }})
     </a>
     <a routerLink="/orders" routerLinkActive="active-link">Orders</a>
   </div>
 
-  <!-- User Icon and Login/Logout Area -->
-  <div class="user-auth-section"> <!-- Wrapper for login/user menu -->
-    <!-- Show Login Link if NOT logged in -->
+  
+  <div class="user-auth-section"> 
+    
     <a *ngIf="!(isUserLoggedIn$ | async)" routerLink="/login" class="nav-link login-link">Login</a>
 
-    <!-- Show User Icon & Dropdown if logged in -->
+    
     <div class="user-menu-container" *ngIf="isUserLoggedIn$ | async">
       <button class="user-icon-button" (click)="toggleDropdown()" title="User Menu">
-        👤 <!-- Simple user icon -->
+        👤 
       </button>
-      <!-- Dropdown Menu -->
+      
       <div class="dropdown-menu" *ngIf="isDropdownOpen">
         <a class="dropdown-item" (click)="logout()">Logout</a>
       </div>
     </div>
-  </div> <!-- End user-auth-section -->
+  </div> 
 
 </nav>
 
-<!-- Add click handler to the main content area to close dropdown -->
 <main (click)="closeDropdown()">
   <router-outlet></router-outlet>
 </main>
