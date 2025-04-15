@@ -74,7 +74,6 @@
   margin-top: 40px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .favorite-card {
     flex-direction: column;
