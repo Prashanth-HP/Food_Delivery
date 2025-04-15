@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from 'src/app/services/auth.service'; // ✅ Correct path to AuthService
+import { AuthService } from 'src/app/services/auth.service'; 
 import { ToastrService } from 'ngx-toastr'; 
 @Component({
   selector: 'app-login',
@@ -20,9 +20,9 @@ export class LoginComponent {
         if (res.success) {
           this.router.navigate(['/']);
           this.toastr.success(`Enjoy your time ordering!`, 'Login Successful!', {
-            timeOut: 2000, // Duration of the toast
-            closeButton: true, // Show close button
-            progressBar: true, // Show progress bar
+            timeOut: 2000, 
+            closeButton: true, 
+            progressBar: true, 
           });
         } else {
           this.errorMessage = res.message;
