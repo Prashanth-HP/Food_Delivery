@@ -1,7 +1,7 @@
 <div class="quick-wrapper">
   <h2 class="quick-title">⚡ Quick Order Menu</h2>
 
-  <!-- Filter & Sort Controls -->
+  
   <div class="filter-controls">
     <select [(ngModel)]="selectedType">
       <option value="">All</option>
@@ -17,7 +17,7 @@
     <button class="reset-btn" (click)="resetFilters()">Reset Filters</button>
   </div>
 
-  <!-- Quick Food Cards -->
+  
   <div *ngIf="filteredFoods.length > 0; else noResults" class="quick-grid">
     <div class="quick-card" *ngFor="let item of filteredFoods">
       <img [src]="item.imageUrl" alt="{{ item.name }}" class="quick-img" />
@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <!-- No Results Template -->
+  
   <ng-template #noResults>
     <div class="no-results">No items found for the selected filter.</div>
   </ng-template>
