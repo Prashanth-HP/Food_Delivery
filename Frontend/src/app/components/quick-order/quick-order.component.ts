@@ -20,7 +20,7 @@ export class QuickOrderComponent {
   sortOrder = '';
 
   constructor(private cartService: CartService,private toastr: ToastrService) {
-    
+
   }
 
   get filteredFoods() {
@@ -44,11 +44,11 @@ export class QuickOrderComponent {
     const audio = new Audio('assets/bell.mp3');
   audio.play();
   this.toastr.success(`${item.name} has been added to your cart!`, 'Item Added', {
-    timeOut: 2000, // Duration of the toast
-    closeButton: true, // Show close button
-    progressBar: true, // Show progress bar
+    timeOut: 2000, 
+    closeButton: true, 
+    progressBar: true, 
   });
-    // Optionally, use a toast or snackbar for better UX
+
   }
   resetFilters() {
     this.selectedType = '';
