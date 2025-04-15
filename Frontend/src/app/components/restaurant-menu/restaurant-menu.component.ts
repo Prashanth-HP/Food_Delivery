@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { ToastrService } from 'ngx-toastr'; 
 
-
 @Component({
   selector: 'app-restaurant-menu',
   templateUrl: './restaurant-menu.component.html',
@@ -20,7 +19,7 @@ export class RestaurantMenuComponent implements OnInit {
   menuItems: MenuItem[] = [];
   searchTerm: string = '';
   filterType: string = 'All';
-  private apiUrl = "../../../assets/restaurant.json";  // Path to the JSON file
+  private apiUrl = "../../../assets/restaurant.json";  
   constructor(
     private route: ActivatedRoute,
     private dineService: DineDataService,
@@ -46,7 +45,7 @@ export class RestaurantMenuComponent implements OnInit {
    getRestaurantss(): Observable<Restaurant[]> {
         return this.http.get<Restaurant[]>(this.apiUrl).pipe(
           tap((data) => {
-            console.log('Fetched restaurants:', data);  // Add this line
+            console.log('Fetched restaurants:', data);  
           })
       );
     }
@@ -56,9 +55,9 @@ export class RestaurantMenuComponent implements OnInit {
     const audio = new Audio('assets/bell.mp3');
   audio.play();
   this.toastr.success(`${item.name} has been added to your cart!`, 'Item Added', {
-    timeOut: 2000, // Duration of the toast
-    closeButton: true, // Show close button
-    progressBar: true, // Show progress bar
+    timeOut: 2000, 
+    closeButton: true, 
+    progressBar: true, 
   });
   }
 
