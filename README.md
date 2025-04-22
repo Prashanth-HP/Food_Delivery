@@ -1,4 +1,4 @@
-# 🍔 Food Delivery Application
+# 🍔QuickBite - Food Delivery Application
 
 A full-stack web application for food delivery built with Angular, Node.js, and MySQL.
 
@@ -8,7 +8,6 @@ A full-stack web application for food delivery built with Angular, Node.js, and 
 - [⚙️ Installation](#installation)
 - [🗃️ Database Schema](#database-schema)
 - [🔌 API Endpoints](#api-endpoints)
-- [💻 Development](#development)
 - [📜 License](#license)
 
 ## ✨ Features
