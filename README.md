@@ -1,28 +1,48 @@
-# 🍔QuickBite - Food Delivery Application
+# 🍔 QuickBite - Food Delivery Application
+
+![QuickBite Home Page](./Output/Home%20Page.jpg)  
+*Discover restaurants near you with our intuitive home page*
 
 A full-stack web application for food delivery built with Angular, Node.js, and MySQL.
 
 ## 📋 Table of Contents
-- [✨ Features](#features)
-- [🛠️ Technologies](#technologies)
-- [⚙️ Installation](#installation)
-- [🗃️ Database Schema](#database-schema)
-- [🔌 API Endpoints](#api-endpoints)
-- [📜 License](#license)
+- [✨ Features](#-features)
+- [🛠️ Technologies](#-technologies)
+- [⚙️ Installation](#-installation)
+- [🗃️ Database Schema](#-database-schema)
+- [🔌 API Endpoints](#-api-endpoints)
+- [📜 License](#-license)
 
 ## ✨ Features
 
-### 🧑‍💻 User Features
-- Browse restaurants without authentication
-- View restaurant details (name, location, cuisine type)
-- Place orders with multiple items
-- Track order status (Pending → Preparing → Out for Delivery → Delivered)
-- Cancel orders before they go "Out for Delivery"
+### 🏠 Home Page Experience
+![Home Page](./Output/Home%20Page.jpg)  
+*Browse restaurants by cuisine type and location*
 
-### 🏨 Restaurant Management
-- Restaurant listing with details
-- Filter by cuisine type
-- Detailed view for each restaurant
+- Discover trending restaurants
+- Filter by cuisine type or dietary preferences
+- View estimated delivery times
+
+### 🛒 Order Customization
+![Menu Items](./Output/Restaurant%20menu%20items.jpg)  
+
+
+### 🍽️ Restaurant Menu
+![Restaurant Menu Page](./Output/Restaurant%20menu%20page.jpg)  
+*Full menu with categories and special offers*
+
+- View complete restaurant menu
+- See item details and customer ratings
+- Apply filters (vegetarian, spicy, etc.)
+
+### ⚡ Quick Order Flow
+![Quick Order](./Output/Quick%20order.jpg)  
+*Express checkout for returning customers*
+
+- One-tap reorder functionality
+- Saved favorite orders
+- Address auto-complete
+
 
 ## 🛠️ Technologies
 
